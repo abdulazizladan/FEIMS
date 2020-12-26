@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SitesService } from '../../services/sites.service';
 
 @Component({
   selector: 'app-sites',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SitesComponent implements OnInit {
 
-  constructor() { }
+  constructor( private siteService : SitesService){ 
+    this.getSites();
+  }
+
+  getSites(){
+    this.siteService.getSites().subscribe(
+      res => {
+        console.log(res)
+      },
+      err => {
+        console.log("Could not fetch resource")
+      }
+    )
+  }
 
   ngOnInit(): void {
+  
   }
 
 }

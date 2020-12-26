@@ -1,8 +1,8 @@
 [
     {
-        "name" : "Polytechnic",
+        "name" : "Nuhu Bamalli Polytechnic",
        "location" : {
-           "lga" : ""
+           "lga" : "",
            "state" : "",
            "zone" : ""
        },
@@ -14,8 +14,7 @@
            "triangulation" : "",
            "level" : "",
            "longitude" : "",
-           "latitude" : "",
-
+           "latitude" : ""
        },
        "change_of_levels" : "",
        "condition" : {
@@ -32,68 +31,68 @@
                "height" : "",
                "thickness" : "",
                "condition" : "",
-               "repiar-cost" : ""
+               "repiar-cost" : 0
            },
            "fence" : {
                "height" : "",
                "thickness" : "",
                "condition" : "",
-               "repair_cost"
+               "repair_cost" : 0
            },
            "roads" : {
                "width" : "",
                "length" : "",
                "condition" : "",
-               "repair_cost"
+               "repair_cost" : 0
            },
            "paths" : {
                "width" : "",
                "length" : "",
                "condition" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "drives" : {
                "width" : "",
                "length" : "",
                "condition" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "steps" : {
                "width" : "",
                "length" : "",
                "condition" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "gas_tanks" : {
                "condition" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "ramps" : {
                "width" : "",
                "length" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "drainage" : {
                "width" : "",
                "length" : "",
                "condition" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "street_lights" : {
                "width" : "",
                "length" : "",
                "condition" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "electricity" : {
                "sources" : "",
                "condition" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "water" : {
                "sources" : "",
                "condition" : "",
-               "repair_cost" : ""
+               "repair_cost" : 0
            },
            "waste_site" : {
                "campus_waste_site" : {
@@ -105,7 +104,7 @@
                        "latitude" : ""
                    },
                    "condition" : "",
-                   "annual_cost" : "",
+                   "annual_cost" : 0,
                    "comments" : ""
                },
                "private_waste_site" : {
@@ -136,196 +135,196 @@
                 "phone_access_type" : "",
                 "electricity_source" : "",
                 "water_source" : "",
-                "image" : ""
-            },
-            "building_services" : {
-                "roof_lights" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "image" : "",
+                "services" : {
+                    "roof_lights" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "air_quality" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "ventilation_system" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "air_conditioning" : {
+                        "condition": "",
+                        "repair_cost" : 0
+                    },
+                    "material_handling" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "roof_opening" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "temperature_controls" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "hot_water" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "burglar_proofs" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "gates" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "drainage" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "distribution" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "cold_water" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "gas_tanks" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "gas_piping" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "air_compressed" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    }
                 },
-                "air_quality" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "building_structure" : {
+                    "dimension" : {
+                        "floor_area" : "",
+                        "headroom" : "",
+                        "floor_count" : 1
+                    },
+                    "superstructure" : "",
+                    "interior_wall_covering" : "",
+                    "floor_structure" : "",
+                    "windows" : ""
                 },
-                "ventilation_system" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "wall_thickness" : {
+                    "concrete_wall" : "",
+                    "paint_condition" : "",
+                    "Mortar_condition" : "",
+                    "structure_type" : "",
+                    "last_decorated" : "",
+                    "stain" : false
                 },
-                "air_conditioning" : {
-                    "condition": "",
-                    "repair_cost" : ""
-                },
-                "material_handling" : {
+                "floor_joinnts" : {
+                    "materials" : "",
+                    "finishes" : "",
                     "condition" : "",
-                    "repair_cost" : ""
+                    "repair_cost" : 0
                 },
-                "roof_opening" : {
+                "ceilings" : {
+                    "materials" : "",
+                    "finishes" : "",
                     "condition" : "",
-                    "repair_cost" : ""
+                    "repair_cost" : 0
                 },
-                "temperature_controls" : {
+                "fanlights" : {
+                    "materials" : "",
+                    "finishes" : "",
                     "condition" : "",
-                    "repair_cost" : ""
+                    "repair_cost" : 0
                 },
-                "hot_water" : {
+                "doors" : {
+                    "materials" : "",
+                    "finishes" : "",
                     "condition" : "",
-                    "repair_cost" : ""
+                    "repair_cost" : 0
                 },
-                "burglar_proofs" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "roof_characteristics" : {
+                    "style" : "",
+                    "support_type" : "",
+                    "truss_type" : "",
+                    "decking_metal" : "",
+                    "covering" : ""    
                 },
-                "gates" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "trim" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
                 },
-                "drainage" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "foundation" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
                 },
-                "distribution" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "floor_slabs" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
                 },
-                "cold_water" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "frame" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
                 },
-                "gas_tanks" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "facade" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
                 },
-                "gas_piping" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "windows" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
                 },
-                "air_compressed" : {
-                    "condition" : "",
-                    "repair_cost" : ""
+                "corridors" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "glazings" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "partitions" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "entrances" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "service_ducts" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "furniture" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "elevator" : {
+                    "count" : "",
+                    "type" : "",
+                    "electric_eye" : "",
+                    "heat_sensor" : "",
+                    "key_location" : "",
+                    "brand_name" : "",
+                    "service_company" : "",
+                    "phone" : "",
+                    "shutoff_location" : "",
+                    "elevator_exits" : ""
                 }
-            },
-            "building_structure" : {
-                "dimension" : {
-                    "floor_area" : "",
-                    "headroom" : "",
-                    "floor_count" : ""
-                },
-                "superstructure" : "",
-                "interior_wall_covering" : "",
-                "floor_structure" : "",
-                "windows" : ""
-            },
-            "wall_thickness" : {
-                "concrete_wall" : "",
-                "paint_condition" : "",
-                "Mortar_condition" : "",
-                "structure_type" : "",
-                "last_decorated" : "",
-                "stain" : false
-            },
-            "floor_joinnts" : {
-                "materials" : "",
-                "finishes" : "",
-                "condition" : "",
-                "repair_cost" : ""
-            },
-            "ceilings" : {
-                "materials" : "",
-                "finishes" : "",
-                "condition" : "",
-                "repair_cost" : ""
-            },
-            "fanlights" : {
-                "materials" : "",
-                "finishes" : "",
-                "condition" : "",
-                "repair_cost" : ""
-            },
-            "doors" : {
-                "materials" : "",
-                "finishes" : "",
-                "condition" : "",
-                "repair_cost" : ""
-            },
-            "roof_characteristics" : {
-                "style" : "",
-                "support_type" : "",
-                "truss_type" : "",
-                "decking_metal" : "",
-                "covering" : ""    
-            },
-            "trim" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "foundation" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "floor_slabs" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "frame" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "facade" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "windows" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "corridors" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "glazings" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "partitions" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "entrances" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "service_ducts" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "furniture" : {
-                "material" : "",
-                "finishes" : "",
-                "condition" : ""
-            },
-            "elevator" : {
-                "count" : "",
-                "type" : "",
-                "electric_eye" : "",
-                "heat_sensor" : "",
-                "key_location" : "",
-                "brand_name" : "",
-                "service_company" : "",
-                "phone" : "",
-                "shutoff_location" : "",
-                "elevator_exits" : ""
-            }
+            }            
         ],
         "equipment" : {
             "heavy" : [
@@ -364,7 +363,7 @@
                         }
                     },
                     "condition" : "",
-                    "repair_cost" : "",
+                    "repair_cost" : 0,
                     "comments" : "",
                     "image" : ""
                 }
@@ -379,8 +378,8 @@
                     "commission_date" : "",
                     "capacity" : "",
                     "status" : "",
-                    "repair_cost" : "",
-                    "comments"
+                    "repair_cost" : 0,
+                    "comments" : ""
                 }
             ]
         }
