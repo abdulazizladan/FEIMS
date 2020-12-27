@@ -1,27 +1,414 @@
 [
     {
-        "name" : "Nuhu Bamalli Polytechnic",
+        "name" : "Auchi Polytechnic",
        "location" : {
-           "lga" : "",
-           "state" : "",
-           "zone" : ""
+           "lga" : "Auchi",
+           "state" : "Kogi",
+           "zone" : "NC"
        },
-       "responcibility_centre" : "",
-       "function" : "",
+       "repair_cost" : 0,
+       "responcibility_centre" : "Central Administration",
+       "function" : "Works and Maintenance department",
        "campus_site_id" : "",
        "details" : {
-           "measurement" : "",
+           "measurement" : "224 HECTARES",
            "triangulation" : "",
            "level" : "",
            "longitude" : "",
            "latitude" : ""
        },
-       "change_of_levels" : "",
+       "change_of_levels" : "Generally undulating. Fairly uphill gradient  of about 1:26 from the Main Gate to the Central Administration and Convocation Area. From these areas the site gently slopes towards the Old Staff Quarters and the School of Art & Design area. A deep valley separates the area from the New Staff Quarters and the Students Hostels.   ",
        "condition" : {
-           "erosion" : false,
+           "erosion" : true,
            "flood" : false,
-           "wooden_elements_200m_above_ground" : false,
-           "trees_3m_from_foundations" : false,
+           "wooden_elements_200m_above_ground" : true,
+           "trees_3m_from_foundations" : true,
+           "weed_on_walls" : false
+       },
+       "site_image" : "",
+       "comments" : "",
+       "services" : {
+           "gate" : {
+               "height" : "",
+               "thickness" : "",
+               "condition" : "",
+               "repiar-cost" : 0
+           },
+           "fence" : {
+               "height" : "",
+               "thickness" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "roads" : {
+               "width" : "",
+               "length" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "paths" : {
+               "width" : "",
+               "length" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "drives" : {
+               "width" : "",
+               "length" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "steps" : {
+               "width" : "",
+               "length" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "gas_tanks" : {
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "ramps" : {
+               "width" : "",
+               "length" : "",
+               "repair_cost" : 0
+           },
+           "drainage" : {
+               "width" : "",
+               "length" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "street_lights" : {
+               "width" : "",
+               "length" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "electricity" : {
+               "sources" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "water" : {
+               "sources" : "",
+               "condition" : "",
+               "repair_cost" : 0
+           },
+           "waste_site" : {
+               "campus_waste_site" : {
+                   "description" : "",
+                   "length" : "",
+                   "width" : "",
+                   "GIS" : {
+                       "longitude" : "",
+                       "latitude" : ""
+                   },
+                   "condition" : "",
+                   "annual_cost" : 0,
+                   "comments" : ""
+               },
+               "private_waste_site" : {
+                   "company_name" : "",
+                   "address" : "",
+                   "identity" : "",
+                   "comments" : ""
+               }
+           } 
+       },
+        "building" : [
+            {
+                "type" : "",
+                "name" : "",
+                "code" : "",
+                "description" : "",
+                "structure" : "",
+                "purpose" : "",
+                "floors" : "",
+                "status" : "",
+                "date_built" : "",
+                "date_purchased" : "",
+                "GIS" : {
+                    "longitude" : "",
+                    "latitude" : ""
+                },
+                "internet_access_type" : "",
+                "phone_access_type" : "",
+                "electricity_source" : "",
+                "water_source" : "",
+                "image" : "",
+                "services" : {
+                    "roof_lights" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "air_quality" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "ventilation_system" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "air_conditioning" : {
+                        "condition": "",
+                        "repair_cost" : 0
+                    },
+                    "material_handling" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "roof_opening" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "temperature_controls" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "hot_water" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "burglar_proofs" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "gates" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "drainage" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "distribution" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "cold_water" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "gas_tanks" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "gas_piping" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    },
+                    "air_compressed" : {
+                        "condition" : "",
+                        "repair_cost" : 0
+                    }
+                },
+                "building_structure" : {
+                    "dimension" : {
+                        "floor_area" : "",
+                        "headroom" : "",
+                        "floor_count" : 1
+                    },
+                    "superstructure" : "",
+                    "interior_wall_covering" : "",
+                    "floor_structure" : "",
+                    "windows" : ""
+                },
+                "wall_thickness" : {
+                    "concrete_wall" : "",
+                    "paint_condition" : "",
+                    "Mortar_condition" : "",
+                    "structure_type" : "",
+                    "last_decorated" : "",
+                    "stain" : false
+                },
+                "floor_joinnts" : {
+                    "materials" : "",
+                    "finishes" : "",
+                    "condition" : "",
+                    "repair_cost" : 0
+                },
+                "ceilings" : {
+                    "materials" : "",
+                    "finishes" : "",
+                    "condition" : "",
+                    "repair_cost" : 0
+                },
+                "fanlights" : {
+                    "materials" : "",
+                    "finishes" : "",
+                    "condition" : "",
+                    "repair_cost" : 0
+                },
+                "doors" : {
+                    "materials" : "",
+                    "finishes" : "",
+                    "condition" : "",
+                    "repair_cost" : 0
+                },
+                "roof_characteristics" : {
+                    "style" : "",
+                    "support_type" : "",
+                    "truss_type" : "",
+                    "decking_metal" : "",
+                    "covering" : ""    
+                },
+                "trim" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "foundation" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "floor_slabs" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "frame" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "facade" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "windows" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "corridors" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "glazings" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "partitions" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "entrances" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "service_ducts" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "furniture" : {
+                    "material" : "",
+                    "finishes" : "",
+                    "condition" : ""
+                },
+                "elevator" : {
+                    "count" : "",
+                    "type" : "",
+                    "electric_eye" : "",
+                    "heat_sensor" : "",
+                    "key_location" : "",
+                    "brand_name" : "",
+                    "service_company" : "",
+                    "phone" : "",
+                    "shutoff_location" : "",
+                    "elevator_exits" : ""
+                }
+            }            
+        ],
+        "equipment" : {
+            "heavy" : [
+                {
+                    "type" : "",
+                    "description" : "",
+                    "name" : "",
+                    "code" : "",
+                    "serial_number" : "",
+                    "manual_available" : false,
+                    "purchase_date" : "",
+                    "manufacture_date" : "",
+                    "commission_date" : "",
+                    "gis" : {
+                        "longitude" : "",
+                        "latitude" : ""
+                    },
+                    "circuit_diagram_available" : false,
+                    "specifications" : {
+                        "electrical" : {
+                            "voltage" : "",
+                            "amperage" : "",
+                            "phases" : ""
+                        },
+                        "mechanical" : {
+                            "rating" : ""
+                        },
+                        "hydraulic" : {
+                            "rating" : ""
+                        },
+                        "steam" : {
+                            "max_working_pressure" : ""
+                        },
+                        "compressed_air" : {
+                            "rating" : ""
+                        }
+                    },
+                    "condition" : "",
+                    "repair_cost" : 0,
+                    "comments" : "",
+                    "image" : ""
+                }
+            ],
+            "high_volume" : [
+                {
+                    "name" : "",
+                    "code" : "",
+                    "description" : "",
+                    "count" : "",
+                    "serial_number" : "",
+                    "commission_date" : "",
+                    "capacity" : "",
+                    "status" : "",
+                    "repair_cost" : 0,
+                    "comments" : ""
+                }
+            ]
+        }
+    },
+    {
+        "name" : "Nuhu Bamalli Polytechnic",
+       "location" : {
+           "lga" : "Zaria",
+           "state" : "Kaduna",
+           "zone" : "NW"
+       },
+       "repair_cost" : 0,
+       "responcibility_centre" : "Central Administration",
+       "function" : "Works and Maintenance department",
+       "campus_site_id" : "",
+       "details" : {
+           "measurement" : "224 HECTARES",
+           "triangulation" : "",
+           "level" : "",
+           "longitude" : "",
+           "latitude" : ""
+       },
+       "change_of_levels" : "Generally undulating. Fairly uphill gradient  of about 1:26 from the Main Gate to the Central Administration and Convocation Area. From these areas the site gently slopes towards the Old Staff Quarters and the School of Art & Design area. A deep valley separates the area from the New Staff Quarters and the Students Hostels.   ",
+       "condition" : {
+           "erosion" : true,
+           "flood" : false,
+           "wooden_elements_200m_above_ground" : true,
+           "trees_3m_from_foundations" : true,
            "weed_on_walls" : false
        },
        "site_image" : "",
