@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatSort, MatTableDataSource } from '@angular/material';
+import { MatTableDataSource } from '@angular/material/table';
 import { SitesService } from '../../services/sites.service';
 import {animate, state, style, transition, trigger} from '@angular/animations';
 
