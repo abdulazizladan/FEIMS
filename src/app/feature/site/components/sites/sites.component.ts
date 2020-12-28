@@ -19,7 +19,7 @@ export class SitesComponent implements OnInit {
 
   displayedColumns: string[] = ['name', 'state', 'repair_cost'];
   dataSource: MatTableDataSource<any>;
-  expandedElement: PeriodicElement | null;
+  //expandedElement: PeriodicElement | null;
 
   constructor( private siteService : SitesService){ 
     this.getSites();
