@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
-  { 
+  {
     path : "",
-    loadChildren : "./feature/site/site.module#SiteModule"
+    loadChildren : ()=>import('./features/admin/admin.module').then(mod=>mod.AdminModule)
+  },
+  {
+    path : "**",
+    component : NotFoundComponent
   }
 ];
 

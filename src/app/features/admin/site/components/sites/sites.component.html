@@ -1,7 +1,7 @@
-<mat-toolbar color="accent">
+<mat-toolbar color="primary">
     <mat-toolbar-row>
         <span fxFlex="1 1 auto"></span>
-        <mat-form-field fxFlex="320px">
+        <mat-form-field fxFlex="320px" appearance="outline">
             <mat-label>Search</mat-label>
             <input matInput type="text" (keyup)="applyFilter($event.target.value)">
             <mat-icon matSuffix>search</mat-icon>
