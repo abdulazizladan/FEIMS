@@ -1,1 +1,43 @@
-<p>login works!</p>
+<div class="login" fxLayout="row" fxLayoutAlign="center">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+    <mat-card
+      fxFlexAlign="center"
+      fxFlex.xs="100%"
+      fxFlex.gt-sm="400px"
+      class="mat-elevation-z5"
+    >
+      <mat-card-header>
+        <mat-card-title> Login </mat-card-title>
+        <mat-card-subtitle> Please enter your login details </mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content fxLayout="column">
+        <div class="text-small warn" *ngIf="failedAttempt" color="warn">Invalid login credentails</div>
+        <mat-form-field appearance="outline">
+          <mat-label>email</mat-label>
+          <input matInput email type="email" required formControlName="email" />
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>password</mat-label>
+          <input matInput type="password" required formControlName="password"/>
+          <mat-icon matSuffix>lock</mat-icon>
+        </mat-form-field>
+        <div class="text-small mb-1">
+          <a routerLink="/reset-password">reset password</a>
+        </div>
+        
+        <div class="text-small">
+          Don't have an account? click <a routerLink="/register">here</a> to
+          register
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button type="submit" color="accent" mat-raised-button>Login</button>
+      </mat-card-actions>
+
+      <mat-card-footer> </mat-card-footer>
+    </mat-card>
+  </form>
+</div>

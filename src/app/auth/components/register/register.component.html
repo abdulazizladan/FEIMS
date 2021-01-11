@@ -1,1 +1,49 @@
-<p>register works!</p>
+<div class="register" fxLayout="row" fxLayoutAlign="center">
+  <form [formGroup]="registerGroup" (ngSubmit)="onSubmit(registerGroup.value)">
+    <mat-card
+      fxFlexAlign="center"
+      fxFlex.xs="100%"
+      fxFlex.gt-sm="400px"
+      class="mat-elevation-z5"
+    >
+      <mat-card-header>
+        <mat-card-title> Register </mat-card-title>
+        <mat-card-subtitle> Please enter your registration details </mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content fxLayout="column">
+        <mat-form-field appearance="outline">
+          <mat-label>email</mat-label>
+          <input matInput email type="email" required formControlName="email" />
+          <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>password</mat-label>
+          <input matInput type="password" required formControlName="password" />
+          <mat-icon matSuffix>lock</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>password</mat-label>
+          <input
+            matInput
+            type="password"
+            required
+            formControlName="confirmPassword"
+          />
+          <mat-icon matSuffix>lock</mat-icon>
+        </mat-form-field>
+        <div>
+          Already have an account? click <a routerLink="/login">here</a> to
+          login
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button type="submit" color="accent" mat-raised-button>Register</button>
+      </mat-card-actions>
+
+      <mat-card-footer> </mat-card-footer>
+    </mat-card>
+  </form>
+</div>
