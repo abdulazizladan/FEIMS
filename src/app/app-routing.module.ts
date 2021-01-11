@@ -8,6 +8,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 const routes: Routes = [
   {
     path : "",
+    pathMatch: 'full',
+    redirectTo: 'login'
+  },
+  {
+    path: 'admin',
     loadChildren : ()=>import('./features/admin/admin.module').then(mod=>mod.AdminModule)
   },
   {

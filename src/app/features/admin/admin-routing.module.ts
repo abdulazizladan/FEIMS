@@ -8,11 +8,6 @@ import { SitesComponent } from './components/sites/sites.component';
 const routes: Routes = [
   {
     path : "",
-    redirectTo : "/admin",
-    pathMatch : "full"
-  },
-  {
-    path : "admin",
     component : DashboardComponent,
     children : [
       {

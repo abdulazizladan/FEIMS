@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from '../../auth.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private readonly formBuilder: FormBuilder,
-    private readonly authService: AuthService) {
+    private readonly authService: AuthService,
+    private readonly router: Router) {
     this.loginForm = this.formBuilder.group({email: '', password: ''});
   }
 
@@ -23,6 +25,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit(value: any) {
     const attempt = this.authService.login(value);
+    this.router.navigate(['/admin'])
   }
 
 }
