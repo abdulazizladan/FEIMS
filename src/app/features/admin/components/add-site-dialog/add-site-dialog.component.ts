@@ -26,7 +26,7 @@ export class AddSiteDialogComponent implements OnInit {
   })
 
   register(){
-
+    
   }
 
   constructor( private fb : FormBuilder){ 
