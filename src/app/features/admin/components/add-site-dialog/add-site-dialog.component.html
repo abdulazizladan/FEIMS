@@ -1,29 +1,37 @@
 <h1 mat-dialog-title>Add Site</h1>
-<div mat-dialog-content fxLayout="column">
-    
-    <mat-form-field>
-        <mat-label>Institution name</mat-label>
-        <input type="text" matInput>
-        <mat-icon matSuffix>mail</mat-icon>
-    </mat-form-field>
+<form [formGroup]="addSiteForm">
+    <div mat-dialog-content fxLayout="column">
+        
+        <mat-form-field>
+            <mat-label>Institution name</mat-label>
+            <input type="text" matInput formControlName="institutionName" required>
+            <mat-icon matSuffix>mail</mat-icon>
+        </mat-form-field>
 
-    <mat-form-field>
-        <mat-label>Acronym</mat-label>
-        <input type="text" matInput>
-        <mat-icon matSuffix></mat-icon>
-    </mat-form-field>
+        <mat-form-field>
+            <mat-label>Acronym</mat-label>
+            <input type="text" matInput formControlName="acronym" required>
+            <mat-icon matSuffix></mat-icon>
+        </mat-form-field>
 
-    <mat-form-field>
-        <mat-label>State</mat-label>
-        <mat-select>
-            <mat-option *ngFor="let state of states" value="{{state}}"> 
-                {{ state }} 
-            </mat-option>
-        </mat-select>
-    </mat-form-field>
+        <mat-form-field>
+            <mat-label>State</mat-label>
+            <mat-select formControlName="state" required>
+                <mat-option *ngFor="let state of states" value="{{state}}"> 
+                    {{ state }} 
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
 
-    <div fxLayout="row">
-        <span fxFlex="1 1 auto"></span>
-        <button mat-flat-button color="primary" mat-dialog-close> Register </button>
+        <mat-form-field>
+            <mat-label>Address</mat-label>
+            <input type="text" formControlName="address" required>
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+
+        <div fxLayout="row">
+            <span fxFlex="1 1 auto"></span>
+            <button mat-flat-button color="primary" mat-dialog-close (click)="register()"> Register </button>
+        </div>
     </div>
-</div>
+</form>

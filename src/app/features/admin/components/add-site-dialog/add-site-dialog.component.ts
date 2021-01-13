@@ -8,7 +8,26 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class AddSiteDialogComponent implements OnInit {
 
-  states = ["Abia", "Abuja", "Adamawa", "Akwa Ibom", "Anambra", "Bauchi", "Bayelsa", "Benue", "Borno"]
+  states : string[] = ["Abia", "Abuja", "Adamawa", "Akwa Ibom", "Anambra", "Bauchi", "Bayelsa", "Benue", "Borno"];
+
+  addSiteForm = this.fb.group({
+    institutionName : ['', [
+      Validators.required
+    ]],
+    acronym : ['', [
+      Validators.required
+    ]],
+    state : ['', [
+      Validators.required
+    ]],
+    address : ['', [
+      Validators.required
+    ]]
+  })
+
+  register(){
+
+  }
 
   constructor( private fb : FormBuilder){ 
 

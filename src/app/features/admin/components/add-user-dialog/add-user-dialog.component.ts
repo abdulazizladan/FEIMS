@@ -7,6 +7,27 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./add-user-dialog.component.scss']
 })
 export class AddUserDialogComponent implements OnInit {
+  
+  addUserForm = this.fb.group({
+    email : ['', [
+      Validators.required,
+      Validators.email
+    ]],
+    firstName : ['',[
+      Validators.required
+    ]],
+    lastName : ['', [
+      Validators.required
+    ]],
+    password : ['', [
+      Validators.required,
+      Validators.min(6)
+    ]]
+  })
+
+  register(){
+
+  }
 
   constructor( private fb : FormBuilder){ 
 

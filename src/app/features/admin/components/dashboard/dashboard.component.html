@@ -10,7 +10,7 @@
                 <mat-icon>more_vert</mat-icon>
             </button>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item>
+                <button mat-menu-item routerLink="">
                     <mat-icon>exit_to_app</mat-icon>Logout
                 </button>
             </mat-menu>
@@ -20,7 +20,7 @@
 
     <mat-sidenav-container fxFlex="1 1 auto" id="body">
         <mat-sidenav id="sidenav" #sidenav mode="over" align="start" fxLayout="column">
-            <button mat-flat-button routerLink="" (click)="sidenav.toggle()">
+            <button mat-flat-button routerLink="/" (click)="sidenav.toggle()">
                 <mat-icon>notifications</mat-icon>
                 Notification
             </button>
