@@ -12,6 +12,11 @@ const routes: Routes = [
     children : [
       {
         path : "",
+        redirectTo : "notifications",
+        pathMatch : "full"
+      },
+      {
+        path : "notifications",
         component : NotificationsComponent
       },      
       {
