@@ -40,7 +40,7 @@
         </div>
       </mat-card-content>
       <mat-card-actions align="end">
-        <button type="submit" color="accent" mat-raised-button>Register</button>
+        <button type="submit" [disabled]="registerGroup.invalid" color="accent" mat-raised-button>Register</button>
       </mat-card-actions>
 
       <mat-card-footer> </mat-card-footer>

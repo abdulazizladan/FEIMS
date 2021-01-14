@@ -15,13 +15,13 @@
         <div class="text-small warn" *ngIf="failedAttempt" color="warn">Invalid login credentails</div>
         <mat-form-field appearance="outline">
           <mat-label>email</mat-label>
-          <input matInput email type="email" required formControlName="email" />
+          <input matInput email type="email" required formControlName="email" >
           <mat-icon matSuffix>mail</mat-icon>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
           <mat-label>password</mat-label>
-          <input matInput type="password" required formControlName="password"/>
+          <input matInput type="password" required formControlName="password">
           <mat-icon matSuffix>lock</mat-icon>
         </mat-form-field>
         <div class="text-small mb-1">
@@ -34,7 +34,7 @@
         </div>
       </mat-card-content>
       <mat-card-actions align="end">
-        <button type="submit" color="accent" mat-raised-button>Login</button>
+        <button type="submit" color="accent" [disabled]="loginForm.invalid" mat-raised-button>Login</button>
       </mat-card-actions>
 
       <mat-card-footer> </mat-card-footer>

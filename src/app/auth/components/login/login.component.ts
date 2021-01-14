@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../auth.service';
 
@@ -17,7 +17,14 @@ export class LoginComponent implements OnInit {
     private readonly formBuilder: FormBuilder,
     private readonly authService: AuthService,
     private readonly router: Router) {
-    this.loginForm = this.formBuilder.group({email: '', password: ''});
+    this.loginForm = this.formBuilder.group({email: ['', [
+      Validators.email,
+      Validators.required
+    ]], password: ['',
+    [
+      Validators.required
+    ]]
+    });
   }
 
   ngOnInit(): void {
