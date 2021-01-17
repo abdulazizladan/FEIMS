@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
+import {animate, state, style, transition, trigger} from '@angular/animations';
+
+import { UserService } from '../../services/user.service';
+
 import { MatDialog } from '@angular/material/dialog';
 import { AddUserDialogComponent } from '../add-user-dialog/add-user-dialog.component';
 
@@ -9,8 +14,21 @@ import { AddUserDialogComponent } from '../add-user-dialog/add-user-dialog.compo
 })
 export class UsersComponent implements OnInit {
 
-  constructor( public dialog : MatDialog ){ 
+  displayedColumns: string[] = ['first_name', 'last_name', 'email', 'actions'];
+  dataSource: MatTableDataSource<any>;
 
+  constructor( public dialog : MatDialog, private _userService : UserService ){ 
+    this.getUsers();
+  }
+
+  getUsers(){
+    this._userService.getUsers().subscribe(
+      res => {
+      this.dataSource = new MatTableDataSource(res);
+    }, err => {
+      console.log("Could not fetch resource")
+    }
+    )
   }
 
   addUser(){
@@ -24,6 +42,11 @@ export class UsersComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
+  }
+
+  applyFilter(filterValue : string){
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
 }

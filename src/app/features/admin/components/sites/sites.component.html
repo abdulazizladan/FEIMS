@@ -1,15 +1,16 @@
 <mat-toolbar color="accent">
     <mat-toolbar-row>
-        <span fxFlex="1 1 auto"></span>   
-        <mat-form-field fxFlex="320px">
-            <mat-label>Search</mat-label>
-            <input matInput type="text" (keyup)="applyFilter($event.target.value)">
-            <mat-icon matSuffix>search</mat-icon>
-        </mat-form-field>     
         <button mat-flat-button color="primary" (click)="addSite()">
             Add site
             <mat-icon>add</mat-icon>
         </button>
+        <span fxFlex="1 1 auto"></span>   
+        <mat-form-field fxFlex="320px" appearance="standard">
+            <mat-label>Search</mat-label>
+            <input matInput type="text" (keyup)="applyFilter($event.target.value)">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>     
+        
     </mat-toolbar-row>
 </mat-toolbar>
 
@@ -27,12 +28,23 @@
             <mat-cell *matCellDef="let site"> {{ site.name }}</mat-cell>
         </ng-container>
 
-        Site Location 
-        <ng-container matColumnDef="state">    
-            <mat-header-cell *matHeaderCellDef> Location. </mat-header-cell>
-            <mat-cell *matCellDef="let site"> {{site.location.lga }}, {{ site.location.state }}</mat-cell>
+        <!--Site Location--> 
+        <ng-container matColumnDef="lga">    
+            <mat-header-cell *matHeaderCellDef> LGA. </mat-header-cell>
+            <mat-cell *matCellDef="let site"> {{site.location.lga }}</mat-cell>
         </ng-container>
 
+        <ng-container matColumnDef="state">    
+            <mat-header-cell *matHeaderCellDef> State. </mat-header-cell>
+            <mat-cell *matCellDef="let site"> {{ site.location.state }}</mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="zone">    
+            <mat-header-cell *matHeaderCellDef> Zone. </mat-header-cell>
+            <mat-cell *matCellDef="let site"> {{ site.location.zone }}</mat-cell>
+        </ng-container>
+
+        <!--Cost of repair-->
         <ng-container matColumnDef="repair_cost">    
             <mat-header-cell *matHeaderCellDef> Cost of repair (Naira). </mat-header-cell>
             <mat-cell *matCellDef="let site"> {{site.repair_cost }}</mat-cell>
@@ -40,5 +52,6 @@
 
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
     </mat-table>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import {animate, state, style, transition, trigger} from '@angular/animations';
+
 import { MatDialog } from '@angular/material/dialog';
 import { AddSiteDialogComponent } from '../add-site-dialog/add-site-dialog.component';
 
@@ -20,7 +21,7 @@ import { SiteService } from '../../services/site.service';
 })
 export class SitesComponent implements OnInit {
 
-  displayedColumns: string[] = ['name', 'state', 'repair_cost'];
+  displayedColumns: string[] = ['name', 'lga', 'state', 'zone', 'repair_cost'];
   dataSource: MatTableDataSource<any>;
 
   constructor( public dialog : MatDialog, public siteService : SiteService ){ 
