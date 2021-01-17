@@ -1,0 +1,105 @@
+{
+  "configVersion": 1,
+  "timestamp": 1610884800801,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/4.4310ff752ea737838d50.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.a88aed589da73c9b5a32.js",
+        "/manifest.webmanifest",
+        "/polyfills.245b4e7d06552a17db95.js",
+        "/runtime.69c62d6c37cbbd960bca.js",
+        "/styles.5182e09cc4d29b4f03c6.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/iconfont/MaterialIcons-Regular.eot",
+        "/assets/iconfont/MaterialIcons-Regular.ijmap",
+        "/assets/iconfont/MaterialIcons-Regular.svg",
+        "/assets/iconfont/MaterialIcons-Regular.ttf",
+        "/assets/iconfont/MaterialIcons-Regular.woff",
+        "/assets/iconfont/MaterialIcons-Regular.woff2",
+        "/assets/iconfont/README.md",
+        "/assets/iconfont/codepoints",
+        "/assets/iconfont/material-icons.css",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/sites.json",
+        "/assets/users.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/4.4310ff752ea737838d50.js": "c84b6f8957b0bbfb00b6b021e65026a4ebe2f452",
+    "/assets/iconfont/MaterialIcons-Regular.eot": "26fb8cecb5512223277b4d290a24492a0f09ede1",
+    "/assets/iconfont/MaterialIcons-Regular.ijmap": "df468e87685c24b2a5d431036d4d5a434efdc28e",
+    "/assets/iconfont/MaterialIcons-Regular.svg": "52ad95c4e0691e8c9b8ef97c551a9970eb498ca0",
+    "/assets/iconfont/MaterialIcons-Regular.ttf": "fc05de31234e0090f7ddc28ce1b23af4026cb1da",
+    "/assets/iconfont/MaterialIcons-Regular.woff": "c6c953c2ccb2ca9abb21db8dbf473b5a435f0082",
+    "/assets/iconfont/MaterialIcons-Regular.woff2": "09963592e8c953cc7e14e3fb0a5b05d5042e8435",
+    "/assets/iconfont/README.md": "867c099a181af04de39152d48aee013a01fcd1cd",
+    "/assets/iconfont/codepoints": "9f50ec0cced0115e7786e4e26b53ff35d2c0f0a0",
+    "/assets/iconfont/material-icons.css": "d45506350e35c369dca6d1ed299b3688e590db8d",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/sites.json": "90d8b80a6edd7f62ebfa9bcb7c4bc58117e93136",
+    "/assets/users.json": "57ea01de3b25723ce4f3198cbfb963b9dc708765",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "6ce56207dd509bc7d07395d06e3c676c90e6c946",
+    "/main.a88aed589da73c9b5a32.js": "cfa368445abdfac483c48474217299a5fe218602",
+    "/manifest.webmanifest": "2ce72d370ff3cb5005ac102a0dbae15043ed07b1",
+    "/polyfills.245b4e7d06552a17db95.js": "f888b31e000d9b05c8c3fef19c325d813f2b7e1b",
+    "/runtime.69c62d6c37cbbd960bca.js": "4f4861bfbede1a79f7f894cb6098932e5d8f9025",
+    "/styles.5182e09cc4d29b4f03c6.css": "c0e05508b454b11e5dddc60c28e406b1dca1abc8"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
