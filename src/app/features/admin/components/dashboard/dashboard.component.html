@@ -5,7 +5,27 @@
             <mat-icon>menu</mat-icon>
         </button>
             FEIMS 
-            <span fxFlex="1 1 auto"></span>
+            <span fxFlex="1 1 auto"></span>            
+            
+            <button mat-icon-button [matMenuTriggerFor]="notifications">
+                <mat-icon>notifications</mat-icon>
+            </button>
+            <mat-menu  #notifications="matMenu">
+                <button mat-menu-item>
+                    Notification 00001
+                </button>
+                <button mat-menu-item>
+                    Notification 00002
+                </button> 
+                <button mat-menu-item>
+                    Notification 00003
+                </button> 
+                <button mat-menu-item>
+                    Notification 00004
+                </button>                 
+            </mat-menu>
+            
+
             <button mat-icon-button [matMenuTriggerFor]="menu">
                 <mat-icon>more_vert</mat-icon>
             </button>
@@ -14,6 +34,7 @@
                     <mat-icon>exit_to_app</mat-icon>Logout
                 </button>
             </mat-menu>
+
         </mat-toolbar-row>
         
     </mat-toolbar>
@@ -21,19 +42,20 @@
     <mat-sidenav-container fxFlex="1 1 auto" id="body">
         <mat-sidenav id="sidenav" #sidenav mode="over" align="start" fxLayout="column">
             <button mat-flat-button routerLink="./" (click)="sidenav.toggle()">
-                <mat-icon>notifications</mat-icon>
-                Notification
+                <mat-icon color="primary">home</mat-icon>
+                Home
             </button>
-            <button mat-flat-button routerLink="sites" (click)="sidenav.toggle()">
-                <mat-icon>place</mat-icon>
-                Sites
+            <button mat-flat-button routerLink="reports" (click)="sidenav.toggle()">
+                <mat-icon color="primary">insert_chart</mat-icon>
+                Reports
             </button>
-            <button routerLink="users" mat-flat-button (click)="sidenav.toggle()">
-                <mat-icon>people</mat-icon>
-                Users
+            <button routerLink="settings" mat-flat-button (click)="sidenav.toggle()">
+                <mat-icon color="primary">settingss</mat-icon>
+                Settings
             </button>            
         </mat-sidenav>
         <!-- Body --><router-outlet></router-outlet>
         
     </mat-sidenav-container>
 </div>
+

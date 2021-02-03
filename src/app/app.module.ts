@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ChartsModule } from 'ng2-charts';
 
 import { CoreModule } from './core/core.module';
 
@@ -24,6 +25,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ChartsModule,
     CoreModule,
     AuthModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })

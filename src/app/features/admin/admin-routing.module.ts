@@ -1,31 +1,34 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { HomeComponent } from './components/home/home.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { UsersComponent } from  './components/users/users.component';
 import { SitesComponent } from './components/sites/sites.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { ReportsComponent } from './components/reports/reports.component';
 
 const routes: Routes = [
   {
     path : "",
     component : DashboardComponent,
     children : [
+      { 
+        path : "home",
+        component : HomeComponent
+      },
       {
         path : "",
-        redirectTo : "notifications",
+        redirectTo : "home",
         pathMatch : "full"
-      },
-      {
-        path : "notifications",
-        component : NotificationsComponent
       },      
       {
-        path : "users",
-        component : UsersComponent
+        path : "reports",
+        component : ReportsComponent
       },
       {
-        path : "sites",
-        component : SitesComponent
+        path : "settings",
+        component : SettingsComponent
       }
     ]
   }

@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import {ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+//ChartJS Module
+import { ChartsModule } from 'ng2-charts';
+
 //Material modules
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -15,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AdminRoutingModule } from './admin-routing.module';
@@ -26,14 +30,18 @@ import { UsersComponent } from './components/users/users.component';
 import { SitesComponent } from './components/sites/sites.component';
 import { AddUserDialogComponent } from './components/add-user-dialog/add-user-dialog.component';
 import { AddSiteDialogComponent } from './components/add-site-dialog/add-site-dialog.component';
+import { HomeComponent } from './components/home/home.component';
+import { ReportsComponent } from './components/reports/reports.component';
+import { SettingsComponent } from './components/settings/settings.component';
 
 
 @NgModule({
-  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, NotificationsComponent, UsersComponent, SitesComponent, AddUserDialogComponent, AddSiteDialogComponent],
+  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, NotificationsComponent, UsersComponent, SitesComponent, AddUserDialogComponent, AddSiteDialogComponent, HomeComponent, ReportsComponent, SettingsComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ChartsModule,
     MatDialogModule,
     MatExpansionModule,
     MatTableModule,
@@ -46,6 +54,7 @@ import { AddSiteDialogComponent } from './components/add-site-dialog/add-site-di
     MatCardModule,
     MatSelectModule,
     MatInputModule,
+    MatListModule,
     AdminRoutingModule
   ],
   exports: [
