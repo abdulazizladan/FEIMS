@@ -7,9 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  faculty : string;
 
-  ngOnInit(): void {
+  selection = {
+    faculties : [
+      {
+        "name" : "engineering",
+        "code" : "ENG",
+        "departments" : [
+          {
+            "name" : "mechanical",
+            "code" : "MECH"
+          },
+          {
+            "name" : "chemical",
+            "code" : "CHEM"
+          }
+        ]
+      }
+    ]
+  }
+
+  constructor(){
+
+  }
+
+  ngOnInit(): void{
+
   }
 
 }

@@ -1,7 +1,11 @@
 #sidenav{
-    width : 240px;
+    width : 320px;
+    .mat-form-field{
+      padding: 10px;
+      width : 90%;
+    }
     button{
-        display : block; 
+        display : block;
         width : 100%;
         padding: 10px;
         text-align: left;

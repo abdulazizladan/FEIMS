@@ -7,7 +7,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
-    path : '', 
+    path : '',
     loadChildren : ()=>import('./auth/auth.module').then(mod => mod.AuthModule)
   },
   {
