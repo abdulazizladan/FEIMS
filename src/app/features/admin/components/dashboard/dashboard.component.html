@@ -47,6 +47,15 @@
             </button>
 
             <mat-form-field appearance="outline">
+              <mat-label>Sites</mat-label>
+              <mat-select [(value)]="site">
+                <mat-option value="">Select Site</mat-option>
+                <mat-option value="KNG">Kongo</mat-option>
+                <mat-option value="SMR">Samaru</mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="site">
                 <mat-label>Select faculty</mat-label>
                 <mat-select [(value)]="faculty">
                     <mat-option value="">Select Faculty</mat-option>
@@ -56,6 +65,16 @@
                     <mat-option value="ART">Arts</mat-option>
                 </mat-select>
             </mat-form-field>
+
+            <mat-form-field appearance="outline" *ngIf="faculty && site">
+              <mat-label>Department</mat-label>
+              <mat-select [(value)]="department">
+                <mat-option value="">Select Site</mat-option>
+                <mat-option value="KNG">Kongo</mat-option>
+                <mat-option value="SMR">Samaru</mat-option>
+              </mat-select>
+            </mat-form-field>
+
             <button mat-flat-button routerLink="reports" (click)="sidenav.toggle()">
                 <mat-icon color="primary">insert_chart</mat-icon>
                 Reports

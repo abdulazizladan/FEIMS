@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { SiteService } from '../../services/site.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,33 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  site : string;
   faculty : string;
+  department : string;
 
-  selection = {
-    faculties : [
-      {
-        "name" : "engineering",
-        "code" : "ENG",
-        "departments" : [
-          {
-            "name" : "mechanical",
-            "code" : "MECH"
-          },
-          {
-            "name" : "chemical",
-            "code" : "CHEM"
-          }
-        ]
-      }
-    ]
-  }
+  selection : any;
 
-  constructor(){
+  constructor( private siteService : SiteService ){
 
   }
 
   ngOnInit(): void{
+    this.siteService.getSites().subscribe(
+      res=>{
+        this.selection = res
+        console.log(res)
+      },
+      err=>{
 
+      }
+    )
   }
 
 }
