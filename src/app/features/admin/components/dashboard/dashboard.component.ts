@@ -22,10 +22,9 @@ export class DashboardComponent implements OnInit {
     this.siteService.getSites().subscribe(
       res=>{
         this.selection = res
-        console.log(res)
       },
       err=>{
-
+        console.log("Unable to complete request")
       }
     )
   }

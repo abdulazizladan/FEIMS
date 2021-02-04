@@ -9,9 +9,10 @@ export class SiteService {
   private sitesUrl : string;
   private siteUrl : string;
 
-  constructor( private _http : HttpClient ){ 
+  constructor( private _http : HttpClient ){
     this.sitesUrl = "./assets/sites.json";
   }
+
   getSites(){
     return this._http.get<any>(this.sitesUrl);
   }
