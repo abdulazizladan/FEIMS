@@ -59,7 +59,9 @@
                 <mat-label>Select faculty</mat-label>
                 <mat-select [(value)]="faculty">
                     <mat-option value="">Select Faculty</mat-option>
-                    <mat-option *ngFor="let faculty of selection[0].faculties" value={{faculty.code}}>{{faculty.name}}</mat-option>
+                    <mat-option *ngFor="let faculty of selection[0].faculties" value={{faculty.code}}>
+                      {{faculty.name}}
+                    </mat-option>
                 </mat-select>
             </mat-form-field>
 
@@ -67,7 +69,9 @@
               <mat-label>Department</mat-label>
               <mat-select [(value)]="department">
                 <mat-option value="">Select Site</mat-option>
-                <mat-option *ngFor="let department of selection[0].faculties[0].departments" value={{department.code}}>{{department.name}}</mat-option>
+                <mat-option *ngFor="let department of selection[0].faculties[0].departments" value={{department.code}}>
+                  {{department.name}}
+                </mat-option>
               </mat-select>
             </mat-form-field>
 
