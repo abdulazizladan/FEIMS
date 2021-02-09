@@ -33,10 +33,13 @@ import { AddSiteDialogComponent } from './components/add-site-dialog/add-site-di
 import { HomeComponent } from './components/home/home.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { BuildingsComponent } from './components/buildings/buildings.component';
+import { BuildingSummaryComponent } from './components/building-summary/building-summary.component';
+import { BuildingComponent } from './components/building/building.component';
 
 
 @NgModule({
-  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, NotificationsComponent, UsersComponent, SitesComponent, AddUserDialogComponent, AddSiteDialogComponent, HomeComponent, ReportsComponent, SettingsComponent],
+  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, NotificationsComponent, UsersComponent, SitesComponent, AddUserDialogComponent, AddSiteDialogComponent, HomeComponent, ReportsComponent, SettingsComponent, BuildingsComponent, BuildingSummaryComponent, BuildingComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

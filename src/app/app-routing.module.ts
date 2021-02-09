@@ -7,11 +7,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
-    path : '',
+    path : 'a',
     loadChildren : ()=>import('./auth/auth.module').then(mod => mod.AuthModule)
   },
   {
-    path: 'admin',
+    path: '',
     loadChildren : ()=>import('./features/admin/admin.module').then(mod=>mod.AdminModule)
   },
   {

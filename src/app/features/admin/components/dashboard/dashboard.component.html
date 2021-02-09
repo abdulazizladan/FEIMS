@@ -1,5 +1,6 @@
 <div style="background-color: grey; height: 100%" fxLayout="column">
-    <mat-toolbar color="primary">
+
+  <mat-toolbar color="primary">
         <mat-toolbar-row>
         <button mat-icon-button (click)="sidenav.toggle()">
             <mat-icon>menu</mat-icon>
@@ -66,8 +67,7 @@
               <mat-label>Department</mat-label>
               <mat-select [(value)]="department">
                 <mat-option value="">Select Site</mat-option>
-                <mat-option value="KNG">Kongo</mat-option>
-                <mat-option value="SMR">Samaru</mat-option>
+                <mat-option *ngFor="let department of selection[0].faculties[0].departments" value={{department.code}}>{{department.name}}</mat-option>
               </mat-select>
             </mat-form-field>
 
@@ -76,12 +76,19 @@
                 Reports
             </button>
             <button routerLink="settings" mat-flat-button (click)="sidenav.toggle()">
-                <mat-icon color="primary">settingss</mat-icon>
+                <mat-icon color="primary">settings</mat-icon>
                 Settings
             </button>
         </mat-sidenav>
-        <!-- Body --><router-outlet></router-outlet>
+        <!-- Body -->
+        <router-outlet></router-outlet>
 
     </mat-sidenav-container>
+
+    <mat-toolbar color="accent">
+      <mat-toolbar-row>
+        ABU / KNG / LAW /CVL
+      </mat-toolbar-row>
+    </mat-toolbar>
 </div>
 

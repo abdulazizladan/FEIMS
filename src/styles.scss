@@ -49,7 +49,7 @@ $FEIMS-theme: mat-light-theme((
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $FEIMS-primary: mat-palette($mat-blue, 900);
-$FEIMS-accent: mat-palette($mat-amber, 900);
+$FEIMS-accent: mat-palette($mat-blue-grey, 600);
 
 // The warn palette is optional (defaults to red).
 $FEIMS-warn: mat-palette($mat-red);
@@ -71,9 +71,6 @@ html, body {
 body{
   margin: 0;
   font-family: Roboto, "Rubik", sans-serif;
-}
-button.mat-button {
-   //border-radius: 50%;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
