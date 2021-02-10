@@ -923,9 +923,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _not_found_not_found_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./not-found/not-found.component */ "nod/");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
-//import { LoginComponent } from './auth/components/login/login.component';
-//import { RegisterComponent } from './auth/components/register/register.component';
-//import { ResetPasswordComponent } from './auth/components/reset-password/reset-password.component';
 
 
 
