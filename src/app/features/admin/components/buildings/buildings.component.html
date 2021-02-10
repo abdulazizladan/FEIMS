@@ -1,11 +1,5 @@
-<div style="padding: 20px" fxLayoutGap="20px" fxLayout.xs="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="space-around center">
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
-  <app-building fxFlex="400px" name="Lecture Theatre"></app-building>
+<div style="padding: 20px" fxLayoutGap="20px" fxLayout.xs="column" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-evenly stretch">
+
+  <app-building fxFlexAlign="stretch" fxFlex.gt-xs="400px" *ngFor="let a of A" [data]="a"></app-building>
+
 </div>

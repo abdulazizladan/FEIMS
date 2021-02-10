@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { building } from '../../models/building.model';
 
 @Component({
@@ -9,10 +9,17 @@ import { building } from '../../models/building.model';
 export class BuildingComponent implements OnInit {
 
   @Input()
-  name : building;
+  data : building;
+
+  public name: string;
 
   constructor(){
+    //this.name = this.data;
+  }
 
+  @Output()
+  showSummary(id : number){
+    console.log(id)
   }
 
   ngOnInit(): void {

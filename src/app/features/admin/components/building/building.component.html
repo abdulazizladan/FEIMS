@@ -2,29 +2,31 @@
 
   <mat-card-header>
     <mat-card-title>
-      {{name}}
+      {{ data.name }}
     </mat-card-title>
     <mat-card-subtitle>
-      Description
+      {{ data.type }}
     </mat-card-subtitle>
   </mat-card-header>
 
-  <img mat-card-image src="./assets/img/01.JPG">
+  <img mat-card-image src={{data.image}}>
 
   <mat-card-content>
     <mat-list dense>
       <mat-list-item>
-        Blah blah blah blah blah blah blah
+        {{ data.description }}
       </mat-list-item>
-      <mat-list-item>
-        Blah blah blah blah blah blah blah
+      <mat-list-item color="warn">
+        Repair cost: N{{data.repair_cost }}
       </mat-list-item>
     </mat-list>
 
   </mat-card-content>
 
+  <mat-divider></mat-divider>
+
   <mat-card-actions align="end">
-    <button mat-flat-button color="primary">
+    <button mat-flat-button color="primary" value={{data.id}} (click)="showSummary(data.id)">
       More details
     </button>
   </mat-card-actions>

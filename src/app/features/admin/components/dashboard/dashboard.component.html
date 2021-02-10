@@ -9,7 +9,7 @@
             <span fxFlex="1 1 auto"></span>
 
             <button mat-icon-button [matMenuTriggerFor]="notifications">
-                <mat-icon>notifications</mat-icon>
+                <mat-icon matBadge="15" matBadgeColor="warn">notifications</mat-icon>
             </button>
             <mat-menu  #notifications="matMenu">
                 <button mat-menu-item>
@@ -69,7 +69,7 @@
               <mat-label>Department</mat-label>
               <mat-select [(value)]="department">
                 <mat-option value="">Select Site</mat-option>
-                <mat-option *ngFor="let department of selection[0].faculties[0].departments" value={{department.code}}>
+                <mat-option *ngFor="let department of selection[0].faculties[0].departments" value={{department.code}} routerLink="buildings">
                   {{department.name}}
                 </mat-option>
               </mat-select>
