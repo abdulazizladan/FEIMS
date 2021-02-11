@@ -8,11 +8,12 @@ import { ChartsModule } from 'ng2-charts';
 
 //Material modules
 import { MatDialogModule } from '@angular/material/dialog';
-import {MatBadgeModule} from '@angular/material/badge';
+import { MatBadgeModule } from '@angular/material/badge';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -46,6 +47,7 @@ import { BuildingComponent } from './components/building/building.component';
     MatTableModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatDialogModule,
     MatMenuModule,
     MatButtonModule,
     MatIconModule,

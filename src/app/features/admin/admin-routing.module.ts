@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { BuildingsComponent } from './components/buildings/buildings.component';
+//import { SummaryComponent } from '../com'
 
 const routes: Routes = [
   {
