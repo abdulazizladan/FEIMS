@@ -32,10 +32,11 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { BuildingsComponent } from './components/buildings/buildings.component';
 import { BuildingSummaryComponent } from './components/building-summary/building-summary.component';
 import { BuildingComponent } from './components/building/building.component';
+import { SummaryComponent } from './components/summary/summary.component';
 
 
 @NgModule({
-  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, HomeComponent, ReportsComponent, SettingsComponent, BuildingsComponent, BuildingSummaryComponent, BuildingComponent],
+  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, HomeComponent, ReportsComponent, SettingsComponent, BuildingsComponent, BuildingSummaryComponent, BuildingComponent, SummaryComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

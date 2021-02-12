@@ -1,1 +1,123 @@
-<p>settings works!</p>
+<div fxLayoutGap="30px" fxLayoutGap="20px" fxLayout="column" style="width:100%;height:100%;padding:40px;">
+  <mat-card>
+    <mat-card-header>
+      <mat-icon mat-card-avatar>settings</mat-icon>
+      <mat-card-title>
+        Settings
+      </mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content fxLayout="column" fxLayoutGap="30px">
+
+
+      <!-- Account settings accordion -->
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>account_circle</mat-icon>
+              Account settings
+            </mat-panel-title>
+            <mat-panel-description>
+              Change user account preferences
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+            <div fxLayout="column" >
+
+            <mat-form-field appearance="outline">
+              <mat-label>Enter old password</mat-label>
+              <mat-icon matSuffix>lock</mat-icon>
+              <input matInput type="password">
+            </mat-form-field>
+
+            <div fxLayout.xs="column" fxlayout.gt-xs="row">
+
+              <mat-form-field appearance="outline" fxFlex="1 1 auto">
+                <mat-label>Enter new password</mat-label>
+                <mat-icon matSuffix>lock</mat-icon>
+                <input matInput type="password">
+              </mat-form-field>
+
+              <span fxFlex="20px"></span>
+
+              <mat-form-field appearance="outline" fxFlex="1 1 auto">
+                <mat-label>Confirm newpassword</mat-label>
+                <mat-icon matSuffix>lock</mat-icon>
+                <input matInput type="password">
+              </mat-form-field>
+
+            </div>
+
+            <div>
+              <span fxFlex="1 1 auto"></span>
+              <button mat-flat-button color="primary">
+                Change password
+              </button>
+            </div>
+
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <!-- Notifications settings-->
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>notifications</mat-icon>
+              Notifications settings
+            </mat-panel-title>
+            <mat-panel-description>
+              Change notifications preferences
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+            <div fxLayout="column" >
+
+
+
+            <div>
+              <span fxFlex="1 1 auto"></span>
+              <button mat-flat-button color="primary">
+                Save changes
+              </button>
+            </div>
+
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <!-- Notifications settings-->
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>view</mat-icon>
+              Appearance settings
+            </mat-panel-title>
+            <mat-panel-description>
+              Change display preferences
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+            <div fxLayout="column" >
+
+
+
+            <div>
+              <span fxFlex="1 1 auto"></span>
+              <button mat-flat-button color="primary">
+                Save changes
+              </button>
+            </div>
+
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <button mat-flat-button color="primary"> Accept changes & Exit </button>
+    </mat-card-actions>
+
+  </mat-card>
+</div>
