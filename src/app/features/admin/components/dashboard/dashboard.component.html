@@ -78,10 +78,17 @@
                 <mat-icon color="primary">insert_chart</mat-icon>
                 Reports
             </button>
+
             <button routerLink="settings" mat-flat-button (click)="sidenav.toggle()">
                 <mat-icon color="primary">settings</mat-icon>
                 Settings
             </button>
+
+            <button mat-flat-button (click)="sidenav.toggle()">
+              <mat-icon color="primary">help</mat-icon>
+              About
+            </button>
+
         </mat-sidenav>
         <!-- Body -->
         <router-outlet></router-outlet>

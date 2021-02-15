@@ -8,6 +8,7 @@ import { ChartsModule } from 'ng2-charts';
 
 //Material modules
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -43,6 +44,7 @@ import { SummaryComponent } from './components/summary/summary.component';
     HttpClientModule,
     ChartsModule,
     MatDialogModule,
+    MatSlideToggleModule,
     MatBadgeModule,
     MatExpansionModule,
     MatTableModule,

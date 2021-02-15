@@ -1,7 +1,7 @@
 <div fxLayoutGap="30px" fxLayoutGap="20px" fxLayout="column" style="width:100%;height:100%;padding:40px;">
   <mat-card>
     <mat-card-header>
-      <mat-icon mat-card-avatar>settings</mat-icon>
+      <mat-icon mat-card-avatar color="primary">settings</mat-icon>
       <mat-card-title>
         Settings
       </mat-card-title>
@@ -15,7 +15,7 @@
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <mat-icon>account_circle</mat-icon>
+              <mat-icon color="primary">account_circle</mat-icon>
               Account settings
             </mat-panel-title>
             <mat-panel-description fxHide.xs>
@@ -64,7 +64,7 @@
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <mat-icon>notifications</mat-icon>
+              <mat-icon color="primary">notifications</mat-icon>
               Notifications settings
             </mat-panel-title>
             <mat-panel-description fxHide.xs>
@@ -86,12 +86,12 @@
         </mat-expansion-panel>
       </mat-accordion>
 
-      <!-- Notifications settings-->
+      <!-- Appearance settings-->
       <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <mat-icon>remove_red_eye</mat-icon>
+              <mat-icon color="primary">visibility</mat-icon>
               Appearance settings
             </mat-panel-title>
             <mat-panel-description fxHide.xs>
@@ -100,7 +100,20 @@
           </mat-expansion-panel-header>
             <div fxLayout="column" >
 
+              <section>
+                Ligh mode
+                <span fxFlex="1 1 auto"></span>
+                <mat-slide-toggle>
 
+                </mat-slide-toggle>
+              </section>
+              <section>
+                Ligh mode
+                <span fxFlex="1 1 auto"></span>
+                <mat-slide-toggle>
+
+                </mat-slide-toggle>
+              </section>
 
             <div>
               <span fxFlex="1 1 auto"></span>
@@ -110,6 +123,21 @@
             </div>
 
           </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <!---->
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon color="primary">help</mat-icon>
+              Help and Support
+            </mat-panel-title>
+            <mat-panel-description fxHide.xs>
+              Get Help and Support
+            </mat-panel-description>
+          </mat-expansion-panel-header>
         </mat-expansion-panel>
       </mat-accordion>
 
