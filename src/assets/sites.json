@@ -27,7 +27,7 @@
           },
           {
             "name" : "public",
-            "code" : "PBLC"
+            "code" : "PBL"
           }
         ]
       }
@@ -43,15 +43,19 @@
         "departments" : [
           {
             "name" : "mechanical",
-            "code" : "MECH"
+            "code" : "MCH"
           },
           {
             "name" : "chemical",
-            "code" : "CHEN"
+            "code" : "CHM"
           },
           {
             "name" : "electrical",
-            "code" : "ELEC"
+            "code" : "ELC"
+          },
+          {
+            "name" : "civil",
+            "code" : "CVL"
           }
         ]
       },
@@ -61,11 +65,19 @@
         "departments" : [
           {
             "name" : "physics",
-            "code" : "PHYS"
+            "code" : "PHS"
           },
           {
             "name" : "biology",
-            "code" : "BIOL"
+            "code" : "BIO"
+          },
+          {
+            "name" : "chemistry",
+            "code" : "CHE"
+          },
+          {
+            "name" : "microbiology",
+            "code" : "MICR"
           }
         ]
       }

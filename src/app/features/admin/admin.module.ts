@@ -34,6 +34,7 @@ import { BuildingsComponent } from './components/buildings/buildings.component';
 import { BuildingSummaryComponent } from './components/building-summary/building-summary.component';
 import { BuildingComponent } from './components/building/building.component';
 import { SummaryComponent } from './components/summary/summary.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import { SummaryComponent } from './components/summary/summary.component';
     MatSelectModule,
     MatInputModule,
     MatListModule,
+    MatGridListModule,
     AdminRoutingModule
   ],
   exports: [

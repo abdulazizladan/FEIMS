@@ -12,6 +12,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthModule } from './auth/auth.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { environment } from '../environments/environment';
     ChartsModule,
     CoreModule,
     AuthModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
