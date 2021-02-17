@@ -188,49 +188,49 @@
     <div style="padding:0px">
       <mat-grid-list cols="4" rowHeight="2:1" gutterSize="10px">
         <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header style="text-align: center;">Sites</mat-grid-tile-header>
+          <mat-grid-tile-header class="mat-display-2" >Sites</mat-grid-tile-header>
+          <div class="mat-display-1">2</div>
+          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        </mat-grid-tile>
+
+        <mat-grid-tile class="mat-elevation-z3">
+          <mat-grid-tile-header class="mat-display-1"><h2>Buildings</h2></mat-grid-tile-header>
           <mat-icon>business</mat-icon>
           <mat-grid-tile-footer>2</mat-grid-tile-footer>
         </mat-grid-tile>
 
         <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header style="text-align: center;"><h2>Buildings</h2></mat-grid-tile-header>
+          <mat-grid-tile-header class="mat-display-1"><h2>High Value Equipment</h2></mat-grid-tile-header>
           <mat-icon>business</mat-icon>
           <mat-grid-tile-footer>2</mat-grid-tile-footer>
         </mat-grid-tile>
 
         <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header style="text-align: center;"><h2>High Value Equipment</h2></mat-grid-tile-header>
+          <mat-grid-tile-header class="mat-display-1"><h2>Low Value Equipment</h2></mat-grid-tile-header>
           <mat-icon>business</mat-icon>
           <mat-grid-tile-footer>2</mat-grid-tile-footer>
         </mat-grid-tile>
 
         <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header style="text-align: center;"><h2>Low Value Equipment</h2></mat-grid-tile-header>
+          <mat-grid-tile-header class="mat-display-1"><h2 class="mat-title">Obsoletes</h2></mat-grid-tile-header>
           <mat-icon>business</mat-icon>
           <mat-grid-tile-footer>2</mat-grid-tile-footer>
         </mat-grid-tile>
 
         <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header style="text-align: center;"><h2 class="mat-title">Obsoletes</h2></mat-grid-tile-header>
+          <mat-grid-tile-header class="mat-display-1"><h2>Abandoned</h2></mat-grid-tile-header>
           <mat-icon>business</mat-icon>
           <mat-grid-tile-footer>2</mat-grid-tile-footer>
         </mat-grid-tile>
 
         <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header style="text-align: center;"><h2>Abandoned</h2></mat-grid-tile-header>
+          <mat-grid-tile-header class="mat-display-1"><h2>Repairable</h2></mat-grid-tile-header>
           <mat-icon>business</mat-icon>
           <mat-grid-tile-footer>2</mat-grid-tile-footer>
         </mat-grid-tile>
 
         <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header style="text-align: center;"><h2>Repairable</h2></mat-grid-tile-header>
-          <mat-icon>business</mat-icon>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
-        </mat-grid-tile>
-
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header style="text-align: center;"><h2>Good Condition</h2></mat-grid-tile-header>
+          <mat-grid-tile-header class="mat-display-1"><h2>Good Condition</h2></mat-grid-tile-header>
           <mat-icon>business</mat-icon>
           <mat-grid-tile-footer>2</mat-grid-tile-footer>
         </mat-grid-tile>
@@ -242,14 +242,40 @@
     <mat-card>
         <mat-card-content fxLayoutGap="20px" fxLayout.xs="column" fxLayout.sm="column" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="space-evenly stretch">
 
-            <mat-card fxFlex="1 1">
-                <mat-card-header>
-                    <mat-card-title>
-                        Top priority repair
-                    </mat-card-title>
-                </mat-card-header>
+          <mat-card fxFlex="1 1">
+            <mat-card-header>
+                <mat-card-title>
+                    Top priority repair
+                </mat-card-title>
+            </mat-card-header>
 
-                <mat-card-content>
+            <mat-card-content>
+              <table mat-table [dataSource]="dataSource" style="width:100%">
+
+                <ng-container matColumnDef="date">
+                  <th mat-header-cell *matHeaderCellDef> Date. </th>
+                  <td mat-cell *matCellDef="let update"> {{update.date}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="activity">
+                  <th mat-header-cell *matHeaderCellDef> Activity </th>
+                  <td mat-cell *matCellDef="let update"> {{update.activity}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="cost">
+                  <th mat-header-cell *matHeaderCellDef> Estimated cost </th>
+                  <td mat-cell *matCellDef="let update"> &#8358; {{update.cost}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+              </table>
+
+            </mat-card-content>
+
+                <!--
+                  <mat-card-content>
                     <mat-list>
                         <mat-list-item >
                             <img matListAvatar src="./assets/img.jpg">
@@ -295,6 +321,7 @@
                         </mat-list-item>
                     </mat-list>
                 </mat-card-content>
+              -->
             </mat-card>
 
             <mat-card fxFlex="1 1">
@@ -303,7 +330,7 @@
                         Update history
                     </mat-card-title>
                 </mat-card-header>
-
+                <!--
                 <mat-card-content>
                     <mat-list>
                         <mat-list-item >
@@ -350,6 +377,7 @@
                         </mat-list-item>
                     </mat-list>
                 </mat-card-content>
+              -->
             </mat-card>
 
         </mat-card-content>
