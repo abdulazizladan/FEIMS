@@ -1,13 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label, Color } from 'ng2-charts';
-
-
-export interface RepairUpdateData {
-  activity : string;
-  date : string;
-  cost : number;
-}
+import { RepairUpdateData } from '../../models/update.model';
+import { UpdateHistoryData } from '../../models/history.model';
 
 const REPAIR_UPDATE_DATA : RepairUpdateData[]= [
   {
@@ -37,6 +32,34 @@ const REPAIR_UPDATE_DATA : RepairUpdateData[]= [
   }
 ]
 
+const UPDATE_HISTORY_DATA : UpdateHistoryData[] = [
+  {
+    activity : "Ceiling repair on LAB ABU/LAW/CVL/LT01",
+    date : "01/01/2021",
+    cost : 80000
+  },
+  {
+    activity : "Ceiling repair on LAB ABU/LAW/CVL/LT01",
+    date : "01/01/2021",
+    cost : 80000
+  },
+  {
+    activity : "Ceiling repair on LAB ABU/LAW/CVL/LT01",
+    date : "01/01/2021",
+    cost : 80000
+  },
+  {
+    activity : "Ceiling repair on LAB ABU/LAW/CVL/LT01",
+    date : "01/01/2021",
+    cost : 80000
+  },
+  {
+    activity : "Ceiling repair on LAB ABU/LAW/CVL/LT01",
+    date : "01/01/2021",
+    cost : 80000
+  },
+]
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -46,7 +69,8 @@ const REPAIR_UPDATE_DATA : RepairUpdateData[]= [
 
 export class HomeComponent implements OnInit {
 
-  dataSource = REPAIR_UPDATE_DATA;
+  update_dataSource = REPAIR_UPDATE_DATA;
+  history_dataSource = UPDATE_HISTORY_DATA;
   displayedColumns: string[] = ['date', 'activity', 'cost'];
   constructor() {
 
