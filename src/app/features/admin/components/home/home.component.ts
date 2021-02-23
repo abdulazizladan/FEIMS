@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
+//import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { Label, Color } from 'ng2-charts';
 import { RepairUpdateData } from '../../models/update.model';
 import { UpdateHistoryData } from '../../models/history.model';
@@ -34,17 +34,17 @@ const REPAIR_UPDATE_DATA : RepairUpdateData[]= [
 
 const UPDATE_HISTORY_DATA : UpdateHistoryData[] = [
   {
-    activity : "Ceiling repair on LAB ABU/LAW/CVL/LT01",
+    activity : "Acquired 2 airconditioners for Mechanical Engineering Lab 001",
     date : "01/01/2021",
     cost : 80000
   },
   {
-    activity : "Ceiling repair on LAB ABU/LAW/CVL/LT01",
+    activity : "Fixed 2km of road from main gate",
     date : "01/01/2021",
     cost : 80000
   },
   {
-    activity : "Ceiling repair on LAB ABU/LAW/CVL/LT01",
+    activity : "Repair on MECH/LT windows",
     date : "01/01/2021",
     cost : 80000
   },

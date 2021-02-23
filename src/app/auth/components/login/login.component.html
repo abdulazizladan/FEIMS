@@ -1,14 +1,14 @@
 <div class="login" fxLayout="row" fxLayoutAlign="center">
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+  <!--Login card-->
     <mat-card
       fxFlexAlign="center"
       fxFlex.xs="100%"
-      fxFlex.gt-sm="400px"
+      fxFlex.gt-xs="600px"
       class="mat-elevation-z5"
     >
+    <form [formGroup]="loginForm">
       <mat-card-header>
-
-        <mat-icon matCardAvatar> account_circle </mat-icon>
+        <mat-icon matCardAvatar color="primary"> account_circle </mat-icon>
         <mat-card-title> Login </mat-card-title>
         <mat-card-subtitle> Please enter your login details </mat-card-subtitle>
       </mat-card-header>
@@ -18,13 +18,13 @@
         <mat-form-field appearance="outline">
           <mat-label>email</mat-label>
           <input matInput type="email" required formControlName="email" >
-          <mat-icon matSuffix>mail</mat-icon>
+          <mat-icon matSuffix color="primary">mail</mat-icon>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
           <mat-label>password</mat-label>
           <input matInput type="password" required formControlName="password">
-          <mat-icon matSuffix>lock</mat-icon>
+          <mat-icon matSuffix color="primary">lock</mat-icon>
         </mat-form-field>
         <div class="text-small mb-1">
           <a routerLink="/reset-password">reset password</a>
@@ -36,10 +36,11 @@
         </div>
       </mat-card-content>
       <mat-card-actions align="end">
-        <button type="submit" color="accent" [disabled]="loginForm.invalid" mat-raised-button>Login</button>
+        <button (click)="login()" color="accent" [disabled]="loginForm.invalid" mat-raised-button>Login</button>
       </mat-card-actions>
 
       <mat-card-footer> </mat-card-footer>
+    </form>
     </mat-card>
-  </form>
+
 </div>

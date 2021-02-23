@@ -34,10 +34,11 @@ import { BuildingSummaryComponent } from './components/building-summary/building
 import { BuildingComponent } from './components/building/building.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
-  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, HomeComponent, ReportsComponent, SettingsComponent, BuildingsComponent, BuildingSummaryComponent, BuildingComponent, SummaryComponent],
+  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, HomeComponent, ReportsComponent, SettingsComponent, BuildingsComponent, BuildingSummaryComponent, BuildingComponent, SummaryComponent, FooterComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

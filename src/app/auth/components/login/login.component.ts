@@ -10,6 +10,7 @@ import { AuthService } from '../../auth.service';
 })
 export class LoginComponent implements OnInit {
 
+  //login form data: { email:string, password:string }
   loginForm: FormGroup;
   failedAttempt: false;
 
@@ -30,9 +31,14 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(value: any) {
-    const attempt = this.authService.login(value);
-    this.router.navigate(['/admin'])
+  //login @params: {email: string, password: string}
+  login(){
+    this.authService.login(this.loginForm.value).subscribe(
+      res=>{
+        console.log('logging in...')
+      },err=>{
+        console.log('unable to authenticate...')
+      }
+    )
   }
-
 }

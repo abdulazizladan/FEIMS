@@ -1,27 +1,43 @@
 <div class="register" fxLayout="row" fxLayoutAlign="center">
-  <form [formGroup]="registerGroup" (ngSubmit)="onSubmit(registerGroup.value)">
+    <!--Register card-->
     <mat-card
       fxFlexAlign="center"
       fxFlex.xs="100%"
-      fxFlex.gt-sm="400px"
+      fxFlex.gt-xs="600px"
       class="mat-elevation-z5"
     >
+    <form [formGroup]="registerGroup" (ngSubmit)="onSubmit(registerGroup.value)">
+
       <mat-card-header>
+        <mat-icon matCardAvatar color="primary"> account_circle </mat-icon>
         <mat-card-title> Register </mat-card-title>
         <mat-card-subtitle> Please enter your registration details </mat-card-subtitle>
       </mat-card-header>
 
       <mat-card-content fxLayout="column">
+
+        <mat-form-field appearance="outline">
+          <mat-label>first name</mat-label>
+          <input matInput type="text" required formControlName="fName" />
+          <mat-icon matSuffix color="primary">person</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>last name</mat-label>
+          <input matInput type="text" required formControlName="lName" />
+          <mat-icon matSuffix color="primary">person</mat-icon>
+        </mat-form-field>
+
         <mat-form-field appearance="outline">
           <mat-label>email</mat-label>
           <input matInput email type="email" required formControlName="email" />
-          <mat-icon matSuffix>mail</mat-icon>
+          <mat-icon matSuffix color="primary">mail</mat-icon>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
           <mat-label>password</mat-label>
           <input matInput type="password" required formControlName="password" />
-          <mat-icon matSuffix>lock</mat-icon>
+          <mat-icon matSuffix color="primary">lock</mat-icon>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
@@ -32,7 +48,7 @@
             required
             formControlName="confirmPassword"
           />
-          <mat-icon matSuffix>lock</mat-icon>
+          <mat-icon matSuffix color="primary">lock</mat-icon>
         </mat-form-field>
         <div>
           Already have an account? click <a routerLink="/login">here</a> to
@@ -40,10 +56,11 @@
         </div>
       </mat-card-content>
       <mat-card-actions align="end">
-        <button type="submit" [disabled]="registerGroup.invalid" color="accent" mat-raised-button>Register</button>
+        <button (click)="register()" [disabled]="registerGroup.invalid" color="accent" mat-raised-button>Register</button>
       </mat-card-actions>
 
       <mat-card-footer> </mat-card-footer>
+    </form>
     </mat-card>
-  </form>
+
 </div>

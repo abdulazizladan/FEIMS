@@ -1,21 +1,31 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor() { }
+  private readonly loginUrl: string = "https://api.narr.ng/api/v1/auth/login";
+  private readonly registerUrl: string = "https://api.narr.ng/api/v1/auth/register";
 
-  login(credentails: {email: String, password: string}): boolean {
-    return true;
+  constructor( private _http: HttpClient){
+
+   }
+
+  login(credentials: {email: String, password: string}){
+    return this._http.post<any>( this.loginUrl, credentials)
   }
 
-  register(value: {email: String, password: string}): string[] {
-    return null;
+  register(value: {email: string, password: string}){
+    return this._http.post<any>( this.loginUrl, value)
   }
 
   resetPassword(value: string): boolean {
+    return true;
+  }
+
+  isAuthenticated(): boolean{
     return true;
   }
 }
