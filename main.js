@@ -288,18 +288,17 @@ class LoginComponent {
         });
     }
     ngOnInit() {
-        if (this.authService.isLoggedIn()) {
-            this.router.navigateByUrl('/admin');
-        }
-        else {
-            this.router.navigateByUrl('/login');
-        }
+        //if(this.authService.isLoggedIn()){
+        //  this.router.navigateByUrl('/admin');
+        //}else{
+        //  this.router.navigateByUrl('/login');
+        //}
     }
     //login @params: {email: string, password: string}
     login() {
         this.authService.login(this.loginForm.value).subscribe(res => {
-            console.log('logging in...');
-            localStorage.setItem('token', res);
+            localStorage.setItem('token', res.payload.token);
+            this.router.navigateByUrl('/admin');
         }, err => {
             console.log('unable to authenticate...');
         });
@@ -1026,13 +1025,12 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
-        path: 'admin',
+        path: '',
         loadChildren: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ./auth/auth.module */ "Yj9t")).then(mod => mod.AuthModule)
     },
     {
-        path: '',
+        path: 'admin',
         loadChildren: () => __webpack_require__.e(/*! import() | features-admin-admin-module */ "features-admin-admin-module").then(__webpack_require__.bind(null, /*! ./features/admin/admin.module */ "xDfr")).then(mod => mod.AdminModule),
-        canLoad: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_2__["AuthGuard"]]
     },
     {
         path: "**",
