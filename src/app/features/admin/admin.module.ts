@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
+//import { Observable } from 'rxjs';
 
 //ChartJS Module
 import { ChartsModule } from 'ng2-charts';
@@ -21,8 +23,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
+
+//FlexLayoutModule
 import { FlexLayoutModule } from '@angular/flex-layout';
+
+//Admin routing
 import { AdminRoutingModule } from './admin-routing.module';
+
+//Components
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -37,8 +45,22 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './components/footer/footer.component';
 
 
+//import { WebsocketService } from './services/websocket.service';
+
 @NgModule({
-  declarations: [ToolbarComponent, SidenavComponent, DashboardComponent, HomeComponent, ReportsComponent, SettingsComponent, BuildingsComponent, BuildingSummaryComponent, BuildingComponent, SummaryComponent, FooterComponent],
+  declarations: [
+    ToolbarComponent,
+    SidenavComponent,
+    DashboardComponent,
+    HomeComponent,
+    ReportsComponent,
+    SettingsComponent,
+    BuildingsComponent,
+    BuildingSummaryComponent,
+    BuildingComponent,
+    SummaryComponent,
+    FooterComponent
+  ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -64,6 +86,9 @@ import { FooterComponent } from './components/footer/footer.component';
     AdminRoutingModule
   ],
   exports: [
+  ],
+  providers: [
+
   ]
 })
 export class AdminModule { }

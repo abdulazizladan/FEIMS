@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../auth.service';
@@ -8,7 +8,7 @@ import { AuthService } from '../../auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit, OnDestroy {
 
   //login form data: { email:string, password:string }
   loginForm: FormGroup;
@@ -29,16 +29,32 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    /*
+    Redirect if login details exist in local storage
+    if(this.authService.isLoggedIn()){
+      this.router.navigateByUrl('/admin');
+    }else{
+      this.router.navigateByUrl('/login');
+    }*/
   }
 
   //login @params: {email: string, password: string}
   login(){
     this.authService.login(this.loginForm.value).subscribe(
       res=>{
-        console.log('logging in...')
+        /* Store token */
+        localStorage.setItem('token', res.payload.token)
+        /* Store user data */
+        localStorage.setItem('data', JSON.stringify(res.payload));
+        /* Route to admin page */
+        this.router.navigateByUrl('/admin');
       },err=>{
         console.log('unable to authenticate...')
       }
     )
+  }
+
+  ngOnDestroy(){
+
   }
 }

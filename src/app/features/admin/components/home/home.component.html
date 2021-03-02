@@ -6,22 +6,37 @@
             <img matCardAvatar src="./assets/img/01.JPG">
             <mat-card-title>
 
-                Adamu Bello University
+                <div class="mat-headline">Adamu Bello University</div>
             </mat-card-title>
             <mat-card-subtitle>
-                2021 Budget Allocation
+                <div class="mat-h2">2021 Budget Allocation</div>
             </mat-card-subtitle>
         </mat-card-header>
 
-        <mat-card-content>
+        <mat-card-content fxLayout.xs="column" fxLayout.gt-xs="row">
+          <div fxFlex.gt-xs="1 1 auto">
             <mat-list>
                 <mat-list-item>
-                    Allocation : N50Bn
+                    <div class="mat-h2">Allocation : N50Bn</div>
                 </mat-list-item>
                 <mat-list-item>
-                    Total cost of repairs : N80Bn
+                    <div class="mat-h2">Total cost of repairs : N80Bn</div>
                 </mat-list-item>
             </mat-list>
+          </div>
+          <mat-divider fxHide.xs [vertical]="true"></mat-divider>
+          <mat-divider fxShow.xs></mat-divider>
+
+          <div fxFlex.gt-xs="320px">
+            <mat-list>
+              <mat-list-item>
+                  <div class="mat-text">User : John Doe</div>
+              </mat-list-item>
+              <mat-list-item>
+                  <div class="mat-text">Role : Administrator</div>
+              </mat-list-item>
+          </mat-list>
+          </div>
         </mat-card-content>
 
         <mat-divider></mat-divider>
@@ -32,241 +47,151 @@
             </button>
         </mat-card-actions>
 
-    </mat-card>
+      </mat-card>
 
-    <!-- Mini stats
-    <mat-card fxLayoutGap="20px" fxLayoutAlign="center center" fxLayout.xs="column"  fxLayout.gt-xs="row wrap-around">
+    <!-- Tiles for small display -->
+    <div style="padding:0px" fxShow.xs fxHide.gt-xs>
+    <mat-grid-list cols="2" rowHeight="1:1" gutterSize="15px">
 
-        <mat-card fxFlex.gt-xs="300px">
+      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+        <div fxLayout="column">
+          <mat-icon>business</mat-icon>
+          <div class="mat-title">Sites</div>
+          <div class="mat-display-2">2</div>
+        </div>
+      </mat-grid-tile>
 
-            <mat-card-header>
-                <mat-icon matCardAvatar>
-                    location_city
-                </mat-icon>
-                <mat-card-title>
-                    Sites
-                </mat-card-title>
+      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+        <div fxLayout="column">
+          <mat-icon>business</mat-icon>
+          <div class="mat-title">Buildings</div>
+          <div class="mat-display-2">254</div>
+        </div>
+      </mat-grid-tile>
 
-                <mat-card-subtitle>
-                   2
-                </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
+      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+        <div fxLayout="column">
+          <mat-icon>business</mat-icon>
+          <div class="mat-title">High Value Equipment</div>
+          <div class="mat-display-2">128</div>
+        </div>
+      </mat-grid-tile>
 
-            </mat-card-content>
-        </mat-card>
+      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+        <div fxLayout="column">
+          <mat-icon>business</mat-icon>
+          <div class="mat-title">Low Value Equipment</div>
+          <div class="mat-display-2">2,465</div>
+        </div>
+      </mat-grid-tile>
 
-        <mat-card fxFlex.gt-xs="300px">
+      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+        <div fxLayout="column">
+          <mat-icon>business</mat-icon>
+          <div class="mat-title">Obsolete</div>
+          <div class="mat-display-2">12</div>
+        </div>
+      </mat-grid-tile>
 
-            <mat-card-header>
-                <mat-icon matCardAvatar>
-                    domain
-                </mat-icon>
-                <mat-card-title>
-                    Buildings
-                </mat-card-title>
+      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+        <div fxLayout="column">
+          <mat-icon>domain_disabled</mat-icon>
+          <div class="mat-title">Abandoned</div>
+          <div class="mat-display-2">2</div>
+        </div>
+      </mat-grid-tile>
 
-                <mat-card-subtitle>
-                    158
-                </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
+      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+        <div fxLayout="column">
+          <mat-icon>business</mat-icon>
+          <div class="mat-title">Repairable</div>
+          <div class="mat-display-2">27</div>
+        </div>
+      </mat-grid-tile>
 
-            </mat-card-content>
-        </mat-card>
+      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+        <div fxLayout="column">
+          <mat-icon>business</mat-icon>
+          <div class="mat-title">Good Condition</div>
+          <div class="mat-display-2">2,564</div>
+        </div>
+      </mat-grid-tile>
 
-        <mat-card fxFlex.gt-xs="300px">
-            <mat-card-header>
-                <mat-icon matCardAvatar>
-                    location_city
-                </mat-icon>
-                <mat-card-title>
-                    High Value Equipment
-                </mat-card-title>
+    </mat-grid-list>
+  </div>
+    <!--Tiles for large display -->
+    <div style="padding:0px" fxHide.xs fxShow.gt-xs>
+      <mat-grid-list cols="4" rowHeight="1:1" gutterSize="15px">
 
-                <mat-card-subtitle>
-                    1,257
-                </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card fxFlex.gt-xs="300px">
-            <mat-card-header>
-                <mat-icon matCardAvatar>
-                    location_city
-                </mat-icon>
-                <mat-card-title>
-                    Low Value Equipment
-                </mat-card-title>
-
-                <mat-card-subtitle>
-                    846,564
-                </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card fxFlex.gt-xs="300px">
-            <mat-card-header>
-                <mat-icon matCardAvatar>
-                    location_city
-                </mat-icon>
-                <mat-card-title>
-                    Obsolete
-                </mat-card-title>
-
-                <mat-card-subtitle>
-                    2
-                </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card fxFlex.gt-xs="300px">
-            <mat-card-header>
-                <mat-icon matCardAvatar>
-                    location_city
-                </mat-icon>
-                <mat-card-title>
-                    Abandoned
-                </mat-card-title>
-
-                <mat-card-subtitle>
-                    0
-                </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card fxFlex.gt-xs="300px">
-            <mat-card-header>
-                <mat-icon matCardAvatar>
-                    location_city
-                </mat-icon>
-                <mat-card-title>
-                    Repairable
-                </mat-card-title>
-
-                <mat-card-subtitle>
-                    10
-                </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card fxFlex.gt-xs="300px">
-            <mat-card-header>
-                <mat-icon matCardAvatar>
-                    location_city
-                </mat-icon>
-                <mat-card-title>
-                    Good condition
-                </mat-card-title>
-
-                <mat-card-subtitle>
-                    1,255
-                </mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-
-            </mat-card-content>
-        </mat-card>
-
-    </mat-card>-->
-
-    <div style="padding:0px">
-      <mat-grid-list cols="4" rowHeight="1:1" gutterSize="10px">
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header class="mat-display-1">
-            <span fxFlex="1 1 auto"></span>
-            Sites
-            <span fxFlex="1 1 auto"></span>
-          </mat-grid-tile-header>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+          <div fxLayout="column">
+            <mat-icon>business</mat-icon>
+            <div class="mat-title">Sites</div>
+            <div class="mat-display-2">2</div>
+          </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header class="mat-display-1">
-            <span fxFlex="1 1 auto"></span>
-            Buildings
-            <span fxFlex="1 1 auto"></span>
-          </mat-grid-tile-header>
-          <mat-icon>business</mat-icon>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+          <div fxLayout="column">
+            <mat-icon>business</mat-icon>
+            <div class="mat-title">Buildings</div>
+            <div class="mat-display-2">254</div>
+          </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header class="mat-display-1">
-            <span fxFlex="1 1 auto"></span>
-            High Value Equipment
-            <span fxFlex="1 1 auto"></span>
-          </mat-grid-tile-header>
-          <mat-icon>business</mat-icon>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+          <div fxLayout="column">
+            <mat-icon>business</mat-icon>
+            <div class="mat-title">High Value Equipment</div>
+            <div class="mat-display-2">128</div>
+          </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header class="mat-display-1">
-            <span fxFlex="1 1 auto"></span>
-            Low Value Equipment
-            <span fxFlex="1 1 auto"></span>
-          </mat-grid-tile-header>
-          <mat-icon>business</mat-icon>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+          <div fxLayout="column">
+            <mat-icon>business</mat-icon>
+            <div class="mat-title">Low Value Equipment</div>
+            <div class="mat-display-2">2,465</div>
+          </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header class="mat-display-1">
-            <span fxFlex="1 1 auto"></span>
-            Obsoletes
-            <span fxFlex="1 1 auto"></span>
-          </mat-grid-tile-header>
-          <mat-icon>business</mat-icon>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+          <div fxLayout="column">
+            <mat-icon>business</mat-icon>
+            <div class="mat-title">Obsolete</div>
+            <div class="mat-display-2">12</div>
+          </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header class="mat-display-1">
-            <span fxFlex="1 1 auto"></span>
-            Abandoned
-            <span fxFlex="1 1 auto"></span>
-          </mat-grid-tile-header>
-          <mat-icon>business</mat-icon>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+          <div fxLayout="column">
+            <mat-icon>domain_disabled</mat-icon>
+            <div class="mat-title">Abandoned</div>
+            <div class="mat-display-2">2</div>
+          </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header class="mat-display-1">
-            <span fxFlex="1 1 auto"></span>
-            Repairable
-            <span fxFlex="1 1 auto"></span>
-          </mat-grid-tile-header>
-          <mat-icon>business</mat-icon>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+          <div fxLayout="column">
+            <mat-icon>business</mat-icon>
+            <div class="mat-title">Repairable</div>
+            <div class="mat-display-2">27</div>
+          </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3">
-          <mat-grid-tile-header class="mat-display-1"><h2>Good Condition</h2></mat-grid-tile-header>
-          <mat-icon>business</mat-icon>
-          <mat-grid-tile-footer>2</mat-grid-tile-footer>
+        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
+          <div fxLayout="column">
+            <mat-icon>business</mat-icon>
+            <div class="mat-title">Good Condition</div>
+            <div class="mat-display-2">2,564</div>
+          </div>
         </mat-grid-tile>
 
       </mat-grid-list>
     </div>
 
 
-    <mat-card>
+    <div style="padding:10px">
         <mat-card-content fxLayoutGap="20px" fxLayout.xs="column" fxLayout.sm="column" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="space-evenly stretch">
 
           <mat-card fxFlex="1 1">
@@ -301,54 +226,7 @@
 
             </mat-card-content>
 
-                <!--
-                  <mat-card-content>
-                    <mat-list>
-                        <mat-list-item >
-                            <img matListAvatar src="./assets/img.jpg">
-                            Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
 
-                        <mat-divider></mat-divider>
-
-                        <mat-list-item >
-                            <img matListAvatar src="./assets/img.jpg">
-                            Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
-
-                        <mat-divider></mat-divider>
-
-                        <mat-list-item >
-                            <img matListAvatar src="./assets/img.jpg">
-                            Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
-
-                        <mat-divider></mat-divider>
-
-                        <mat-list-item >
-                            <img matListAvatar src="./assets/img.jpg">
-                            <p>Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
-
-                        <mat-divider></mat-divider>
-
-                        <mat-list-item >
-                            <img matListAvatar src="./assets/img.jpg">
-                            Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
-                    </mat-list>
-                </mat-card-content>
-              -->
             </mat-card>
 
             <mat-card fxFlex="1 1">
@@ -382,58 +260,11 @@
                   </table>
 
                 </mat-card-content>
-                <!--
-                <mat-card-content>
-                    <mat-list>
-                        <mat-list-item >
-                            <img matListAvatar src="/assets/img.jpg">
-                            Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
 
-                        <mat-divider></mat-divider>
-
-                        <mat-list-item >
-                            <img matListAvatar src="/assets/img.jpg">
-                            Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
-
-                        <mat-divider></mat-divider>
-
-                        <mat-list-item >
-                            <img matListAvatar src="/assets/img.jpg">
-                            Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
-
-                        <mat-divider></mat-divider>
-
-                        <mat-list-item >
-                            <img matListAvatar src="/assets/img.jpg">
-                            Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
-
-                        <mat-divider></mat-divider>
-
-                        <mat-list-item >
-                            <img matListAvatar src="/assets/img.jpg">
-                             Building 001
-                            <span fxFlex="200px"></span>
-                            <div>Cost : 0</div>
-                        </mat-list-item>
-                    </mat-list>
-                </mat-card-content>
-              -->
             </mat-card>
 
         </mat-card-content>
-    </mat-card>
+      </div>
 
 
     <mat-card>
@@ -443,6 +274,7 @@
             </mat-card-title>
         </mat-card-header>
 
+        <!--Chart -->
         <mat-card-content>
             <div style="display: block">
                 <canvas baseChart

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +23,20 @@ export class AuthService {
 
   resetPassword(value: string): boolean {
     return true;
+  }
+
+  isLoggedIn(): boolean{
+    return true;
+    //Use isAuthenticated route
+    //return this._http.get<any>('isAuthenticated');
+  }
+
+  addUserToCache(){
+
+  }
+
+  getUserFromCache(){
+
   }
 
   isAuthenticated(): boolean{
