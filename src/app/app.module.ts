@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ChartsModule } from 'ng2-charts';
 
 import { CoreModule } from './core/core.module';
+import { AuthService } from './auth/auth.service';
+import { AuthGuard } from './auth/auth.guard'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,7 +32,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     NgbModule
   ],
-  providers: [],
+  providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

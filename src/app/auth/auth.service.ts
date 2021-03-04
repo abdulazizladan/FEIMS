@@ -26,9 +26,7 @@ export class AuthService {
   }
 
   isLoggedIn(): boolean{
-    return true;
-    //Use isAuthenticated route
-    //return this._http.get<any>('isAuthenticated');
+    return !!localStorage.getItem('token');
   }
 
   addUserToCache(){
