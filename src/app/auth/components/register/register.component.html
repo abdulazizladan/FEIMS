@@ -41,14 +41,27 @@
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-          <mat-label>password</mat-label>
-          <input
-            matInput
-            type="password"
-            required
-            formControlName="confirmPassword"
-          />
+          <mat-label>Confirm password</mat-label>
+          <input matInput type="password" required formControlName="confirmPassword"/>
           <mat-icon matSuffix color="primary">lock</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Address</mat-label>
+          <input matInput type="text" required formControlName="address"/>
+          <mat-icon matSuffix color="primary">location_on</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Phone number</mat-label>
+          <input matInput type="tel" required formControlName="phone"/>
+          <mat-icon matSuffix color="primary">phone</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Date of birth</mat-label>
+          <input matInput type="date" required formControlName="dob"/>
+          <mat-icon matSuffix color="primary">date_range</mat-icon>
         </mat-form-field>
         <div>
           Already have an account? click <a routerLink="/login">here</a> to

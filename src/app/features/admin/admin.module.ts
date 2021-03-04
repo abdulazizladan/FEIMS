@@ -23,6 +23,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 //FlexLayoutModule
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -41,7 +43,6 @@ import { BuildingsComponent } from './components/buildings/buildings.component';
 import { BuildingSummaryComponent } from './components/building-summary/building-summary.component';
 import { BuildingComponent } from './components/building/building.component';
 import { SummaryComponent } from './components/summary/summary.component';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { FooterComponent } from './components/footer/footer.component';
 
 
@@ -83,6 +84,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatInputModule,
     MatListModule,
     MatGridListModule,
+    MatDatepickerModule,
     AdminRoutingModule
   ],
   exports: [

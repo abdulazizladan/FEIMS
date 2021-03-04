@@ -34,6 +34,23 @@ export class RegisterComponent implements OnInit {
       confirmPassword: ['',
       [
         Validators.required
+      ]],
+      institution: this.formBuilder.group({
+        type: ['', [
+
+        ]],
+        name: ['', [
+
+        ]]
+      }),
+      address: ['', [
+        Validators.required
+      ]],
+      phone: ['', [
+        Validators.required
+      ]],
+      dob: ['', [
+        Validators.required
       ]]
     });
   }
@@ -48,6 +65,7 @@ export class RegisterComponent implements OnInit {
         console.log("Registering...")
       },err=>{
         console.log("Unable to register...")
+        console.log(this.registerGroup.value)
       }
     )
   }

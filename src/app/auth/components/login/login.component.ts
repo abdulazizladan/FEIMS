@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Subscription } from 'rxjs';
 import { AuthService } from '../../auth.service';
 
 @Component({
@@ -14,6 +15,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   loginForm: FormGroup;
   failedAttempt: boolean = false;
   loginFailMessage: string;
+  subscription: Subscription;
 
   constructor(
     private readonly formBuilder: FormBuilder,
@@ -43,7 +45,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   //login @params: {email: string, password: string}
   login(){
     this.failedAttempt = false;
-    this.authService.login(this.loginForm.value).subscribe(
+    this.subscription = this.authService.login(this.loginForm.value).subscribe(
       res=>{
         /* Store token */
         localStorage.setItem('token', res.payload.token)
@@ -59,6 +61,6 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-
+    //this.subscription.unsubscribe()
   }
 }
