@@ -46,6 +46,17 @@
                 Home
             </button>
 
+            <mat-list dense>
+              <h3 mat-subheader>User</h3>
+              <div fxLayout="row" fxLayoutAlign="center">
+              <img fxAlign="center" matListAvatar style="width: 50px; height: 50px; border-radius: 25px;" src="/assets/img/pp.jpeg" alt="">
+              </div>
+              <mat-list-item class="mat-caption">Name : </mat-list-item>
+              <mat-list-item class="mat-caption">email : </mat-list-item>
+              <mat-list-item class="mat-caption">Role : </mat-list-item>
+            </mat-list>
+            <mat-divider></mat-divider>
+
             <mat-form-field appearance="outline">
               <mat-label>Sites</mat-label>
               <mat-select [(value)]="site">

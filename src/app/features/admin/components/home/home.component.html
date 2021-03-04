@@ -6,7 +6,7 @@
             <img matCardAvatar src="./assets/img/01.JPG">
             <mat-card-title>
 
-                <div class="mat-headline">Adamu Bello University</div>
+                <div class="mat-headline">{{institution}}y</div>
             </mat-card-title>
             <mat-card-subtitle>
                 <div class="mat-h2">2021 Budget Allocation</div>
@@ -16,12 +16,12 @@
         <mat-card-content fxLayout.xs="column" fxLayout.gt-xs="row">
           <div fxFlex.gt-xs="1 1 auto">
             <mat-list>
-                <mat-list-item>
-                    <div class="mat-h2">Allocation : N50Bn</div>
-                </mat-list-item>
-                <mat-list-item>
-                    <div class="mat-h2">Total cost of repairs : N80Bn</div>
-                </mat-list-item>
+              <mat-list-item>
+                  <div class="mat-h2">Allocation : N50Bn</div>
+              </mat-list-item>
+              <mat-list-item>
+                  <div class="mat-h2">Total cost of repairs : N80Bn</div>
+              </mat-list-item>
             </mat-list>
           </div>
           <mat-divider fxHide.xs [vertical]="true"></mat-divider>
@@ -29,11 +29,14 @@
 
           <div fxFlex.gt-xs="320px">
             <mat-list>
+              <div fxLayout="row" fxLayoutAlign="center">
+                <img fxAlign="center" matListAvatar style="width: 50px; height: 50px; border-radius: 25px;" src="/assets/img/pp.jpeg" alt="">
+              </div>
               <mat-list-item>
-                  <div class="mat-text">User : John Doe</div>
+                  <div class="mat-text">User : {{ fullName }}</div>
               </mat-list-item>
               <mat-list-item>
-                  <div class="mat-text">Role : Administrator</div>
+                  <div class="mat-text">Role : {{role}}</div>
               </mat-list-item>
           </mat-list>
           </div>

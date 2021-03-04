@@ -69,6 +69,10 @@ const UPDATE_HISTORY_DATA : UpdateHistoryData[] = [
 
 export class HomeComponent implements OnInit {
 
+  userData: any;
+  fullName: string;
+  role: string;
+  institution: string;
   update_dataSource = REPAIR_UPDATE_DATA;
   history_dataSource = UPDATE_HISTORY_DATA;
   displayedColumns: string[] = ['date', 'activity', 'cost'];
@@ -118,7 +122,10 @@ export class HomeComponent implements OnInit {
   ];
 
   ngOnInit(): void {
-
+    this.userData = JSON.parse(localStorage.getItem("data"));
+    this.fullName = this.userData.user.fullName;
+    this.role = this.userData.user.userRole;
+    this.institution = this.userData.user.institution.name;
   }
 
 }
