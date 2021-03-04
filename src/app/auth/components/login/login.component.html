@@ -26,6 +26,10 @@
           <input matInput type="password" required formControlName="password">
           <mat-icon matSuffix color="primary">lock</mat-icon>
         </mat-form-field>
+
+        <!--<div [fxShow]="failedAttempt" style="padding: 5px; color: red; border: 1px solid red; background-color: #ffcdd2">
+          {{loginFailMessage}}
+        </div>-->
         <div class="text-small mb-1">
           <a routerLink="/reset-password">reset password</a>
         </div>

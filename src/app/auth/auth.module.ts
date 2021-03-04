@@ -14,6 +14,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [LoginComponent, RegisterComponent, ResetPasswordComponent],
@@ -24,6 +25,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatIconModule,
     MatInputModule,
     MatButtonModule,
+    MatProgressSpinnerModule,
     FlexLayoutModule,
     ReactiveFormsModule,
     HttpClientModule

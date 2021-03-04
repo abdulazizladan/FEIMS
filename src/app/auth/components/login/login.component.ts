@@ -12,7 +12,8 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   //login form data: { email:string, password:string }
   loginForm: FormGroup;
-  failedAttempt: false;
+  failedAttempt: boolean = false;
+  loginFailMessage: string;
 
   constructor(
     private readonly formBuilder: FormBuilder,
@@ -29,6 +30,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.loginFailMessage = "";
     /*
     Redirect if login details exist in local storage
     if(this.authService.isLoggedIn()){
@@ -40,6 +42,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   //login @params: {email: string, password: string}
   login(){
+    this.failedAttempt = false;
     this.authService.login(this.loginForm.value).subscribe(
       res=>{
         /* Store token */
@@ -49,7 +52,8 @@ export class LoginComponent implements OnInit, OnDestroy {
         /* Route to admin page */
         this.router.navigateByUrl('/admin');
       },err=>{
-        console.log('unable to authenticate...')
+        this.failedAttempt = true;
+        this.loginFailMessage = "Unable to login"
       }
     )
   }
