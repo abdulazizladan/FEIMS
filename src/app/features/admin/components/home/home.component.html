@@ -54,139 +54,210 @@
 
     <!-- Tiles for small display -->
     <div style="padding:0px" fxShow.xs fxHide.gt-xs>
-    <mat-grid-list cols="2" rowHeight="2:1" gutterSize="15px">
+    <mat-grid-list cols="2" rowHeight="1:1" gutterSize="15px">
 
-      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-        <div fxLayout="column">
+      <mat-grid-tile class="mat-elevation-z3" class="tile">
+        <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
           <mat-icon>business</mat-icon>
-          <div class="mat-title">Sites</div>
-          <div class="mat-display-2">2</div>
+          <div class="title">Sites</div>
+          <div class="subtitle">2</div>
         </div>
       </mat-grid-tile>
 
-      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-        <div fxLayout="column">
+      <mat-grid-tile class="mat-elevation-z3" class="tile">
+        <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
           <mat-icon>business</mat-icon>
-          <div class="mat-title">Buildings</div>
-          <div class="mat-display-2">254</div>
+          <div class="title">buildings</div>
+          <div class="subtitle">254</div>
         </div>
       </mat-grid-tile>
 
-      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-        <div fxLayout="column">
+      <mat-grid-tile class="mat-elevation-z3" class="tile">
+        <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
           <mat-icon>business</mat-icon>
-          <div class="mat-title">High Value Equipment</div>
-          <div class="mat-display-2">128</div>
+          <div class="title">High Value Equipment</div>
+          <div class="subtitle">128</div>
         </div>
       </mat-grid-tile>
 
-      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-        <div fxLayout="column">
+      <mat-grid-tile class="mat-elevation-z3" class="tile">
+        <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
           <mat-icon>business</mat-icon>
-          <div class="mat-title">Low Value Equipment</div>
-          <div class="mat-display-2">2,465</div>
+          <div class="title">Low Value Equipment</div>
+          <div class="subtitle">2,465</div>
         </div>
       </mat-grid-tile>
 
-      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-        <div fxLayout="column">
+      <mat-grid-tile class="mat-elevation-z3" class="tile">
+        <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
           <mat-icon>business</mat-icon>
-          <div class="mat-title">Obsolete</div>
-          <div class="mat-display-2">12</div>
+          <div class="title">Obsolete</div>
+          <div class="subtitle">12</div>
         </div>
       </mat-grid-tile>
 
-      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-        <div fxLayout="column">
-          <mat-icon>domain_disabled</mat-icon>
-          <div class="mat-title">Abandoned</div>
-          <div class="mat-display-2">2</div>
+      <mat-grid-tile class="mat-elevation-z3" class="tile">
+        <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+          <mat-icon>business</mat-icon>
+          <div class="title">Abandoned</div>
+          <div class="subtitle">2</div>
         </div>
       </mat-grid-tile>
 
-      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-        <div fxLayout="column">
+      <mat-grid-tile class="mat-elevation-z3" class="tile">
+        <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
           <mat-icon>business</mat-icon>
-          <div class="mat-title">Repairable</div>
-          <div class="mat-display-2">27</div>
+          <div class="title">Repairable</div>
+          <div class="subtitle">27</div>
         </div>
       </mat-grid-tile>
 
-      <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-        <div fxLayout="column">
+      <mat-grid-tile class="mat-elevation-z3" class="tile">
+        <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
           <mat-icon>business</mat-icon>
-          <div class="mat-title">Good Condition</div>
-          <div class="mat-display-2">2,564</div>
+          <div class="title">Good condition</div>
+          <div class="subtitle">2,564</div>
         </div>
       </mat-grid-tile>
 
     </mat-grid-list>
-  </div>
+  </div><!-- Tiles for medium display -->
+  <div style="padding:0px" fxShow.sm fxHide.gt-sm fxHide.lt-sm>
+  <mat-grid-list cols="3" rowHeight="1:1" gutterSize="15px">
+
+    <mat-grid-tile class="mat-elevation-z3" class="tile">
+      <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-icon>business</mat-icon>
+        <div class="title">Sites</div>
+        <div class="subtitle">2</div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z3" class="tile">
+      <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-icon>business</mat-icon>
+        <div class="title">buildings</div>
+        <div class="subtitle">254</div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z3" class="tile">
+      <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-icon>business</mat-icon>
+        <div class="title">High Value Equipment</div>
+        <div class="subtitle">128</div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z3" class="tile">
+      <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-icon>business</mat-icon>
+        <div class="title">Low Value Equipment</div>
+        <div class="subtitle">2,465</div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z3" class="tile">
+      <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-icon>business</mat-icon>
+        <div class="title">Obsolete</div>
+        <div class="subtitle">12</div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z3" class="tile">
+      <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-icon>business</mat-icon>
+        <div class="title">Abandoned</div>
+        <div class="subtitle">2</div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z3" class="tile">
+      <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-icon>business</mat-icon>
+        <div class="title">Repairable</div>
+        <div class="subtitle">27</div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="mat-elevation-z3" class="tile">
+      <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+        <mat-icon>business</mat-icon>
+        <div class="title">Good condition</div>
+        <div class="subtitle">2,564</div>
+      </div>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>
+
+
     <!--Tiles for large display -->
-    <div style="padding:0px" fxHide.xs fxShow.gt-xs>
+    <div style="padding:0px" fxHide.xs fxHide.sm fxShow.gt-sm>
       <mat-grid-list cols="4" rowHeight="2:1" gutterSize="15px">
 
-        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-          <div fxLayout="column">
+        <mat-grid-tile class="mat-elevation-z3" class="tile">
+          <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
             <mat-icon>business</mat-icon>
-            <div class="mat-title">Sites</div>
-            <div class="mat-display-2">2</div>
+            <div class="title">Sites</div>
+            <div class="subtitle">2</div>
           </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-          <div fxLayout="column">
+        <mat-grid-tile class="mat-elevation-z3" class="tile">
+          <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
             <mat-icon>business</mat-icon>
-            <div class="mat-title">Buildings</div>
-            <div class="mat-display-2">254</div>
+            <div class="title">buildings</div>
+            <div class="subtitle">254</div>
           </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-          <div fxLayout="column">
+        <mat-grid-tile class="mat-elevation-z3" class="tile">
+          <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
             <mat-icon>business</mat-icon>
-            <div class="mat-title">High Value Equipment</div>
-            <div class="mat-display-2">128</div>
+            <div class="title">High Value Equipment</div>
+            <div class="subtitle">128</div>
           </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-          <div fxLayout="column">
+        <mat-grid-tile class="mat-elevation-z3" class="tile">
+          <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
             <mat-icon>business</mat-icon>
-            <div class="mat-title">Low Value Equipment</div>
-            <div class="mat-display-2">2,465</div>
+            <div class="title">Low Value Equipment</div>
+            <div class="subtitle">2,465</div>
           </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-          <div fxLayout="column">
+        <mat-grid-tile class="mat-elevation-z3" class="tile">
+          <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
             <mat-icon>business</mat-icon>
-            <div class="mat-title">Obsolete</div>
-            <div class="mat-display-2">12</div>
+            <div class="title">Obsolete</div>
+            <div class="subtitle">12</div>
           </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-          <div fxLayout="column">
-            <mat-icon>domain_disabled</mat-icon>
-            <div class="mat-title">Abandoned</div>
-            <div class="mat-display-2">2</div>
+        <mat-grid-tile class="mat-elevation-z3" class="tile">
+          <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
+            <mat-icon>business</mat-icon>
+            <div class="title">Abandoned</div>
+            <div class="subtitle">2</div>
           </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-          <div fxLayout="column">
+        <mat-grid-tile class="mat-elevation-z3" class="tile">
+          <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
             <mat-icon>business</mat-icon>
-            <div class="mat-title">Repairable</div>
-            <div class="mat-display-2">27</div>
+            <div class="title">Repairable</div>
+            <div class="subtitle">27</div>
           </div>
         </mat-grid-tile>
 
-        <mat-grid-tile class="mat-elevation-z3" style="background-color: #00695c; color: white">
-          <div fxLayout="column">
+        <mat-grid-tile class="mat-elevation-z3" class="tile">
+          <div class="tile-content" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
             <mat-icon>business</mat-icon>
-            <div class="mat-title">Good Condition</div>
-            <div class="mat-display-2">2,564</div>
+            <div class="title">Good condition</div>
+            <div class="subtitle">2,564</div>
           </div>
         </mat-grid-tile>
 
