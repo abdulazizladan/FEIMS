@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { webSocket } from "rxjs/webSocket";
+import { webSocket, WebSocketSubject } from "rxjs/webSocket";
 import * as Rx from 'rxjs/Rx';
 import { Observable } from 'rxjs/Rx';
 
