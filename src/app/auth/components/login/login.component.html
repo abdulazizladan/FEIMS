@@ -3,15 +3,17 @@
     <mat-card
       fxFlexAlign="center"
       fxFlex.xs="100%"
-      fxFlex.gt-xs="600px"
+      fxFlex.gt-xs="400px"
       class="mat-elevation-z5"
     >
     <form [formGroup]="loginForm">
-      <mat-card-header color="primary">
-        <mat-icon matCardAvatar color="primary"> account_circle </mat-icon>
-        <mat-card-title> Login </mat-card-title>
-        <mat-card-subtitle> Please enter your login details </mat-card-subtitle>
-      </mat-card-header>
+
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <mat-icon> account_circle </mat-icon>
+          Login
+        </mat-toolbar-row>
+      </mat-toolbar>
 
       <mat-card-content fxLayout="column">
         <div class="text-small warn" *ngIf="failedAttempt" color="warn">Invalid login credentails</div>
@@ -31,7 +33,7 @@
           {{loginFailMessage}}
         </div>-->
         <div class="text-small mb-1">
-          <a routerLink="/reset-password">reset password</a>
+          <a routerLink="/reset-password">Reset password</a>
         </div>
 
         <div class="text-small">

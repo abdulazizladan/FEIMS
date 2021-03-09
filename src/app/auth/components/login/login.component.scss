@@ -2,4 +2,18 @@
 
 .login {
     height: 100%;
+    background-image: url('../../../../assets/bg.svg');
+}
+
+.mat-card{
+  padding: 0px;
+  .mat-card-content{
+    padding: 20px;
+  }
+  .mat-card-actions{
+    padding: 20px;
+  }
+  .mat-card-footer{
+    padding: 0px;
+  }
 }

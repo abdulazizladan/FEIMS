@@ -3,16 +3,17 @@
     <mat-card
       fxFlexAlign="center"
       fxFlex.xs="100%"
-      fxFlex.gt-xs="600px"
+      fxFlex.gt-xs="400px"
       class="mat-elevation-z5"
     >
     <form [formGroup]="registerGroup" (ngSubmit)="onSubmit(registerGroup.value)">
 
-      <mat-card-header>
-        <mat-icon matCardAvatar color="primary"> account_circle </mat-icon>
-        <mat-card-title> Register </mat-card-title>
-        <mat-card-subtitle> Please enter your registration details </mat-card-subtitle>
-      </mat-card-header>
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <mat-icon> account_circle </mat-icon>
+          Register
+        </mat-toolbar-row>
+      </mat-toolbar>
 
       <mat-card-content fxLayout="column">
 
