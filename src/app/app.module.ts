@@ -17,6 +17,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CoreModule,
     AuthModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    NgbModule
+    NgbModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatIconModule
   ],
   providers: [AuthGuard, AuthService,
     {

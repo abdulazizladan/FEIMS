@@ -1,0 +1,104 @@
+<!-- Add Building dialog -->
+
+<mat-vertical-stepper linear>
+  <!-- Building survey -->
+  <mat-step label="Building survey">
+
+    <form>
+      <div fxLayout="column">
+      <mat-form-field appearance="outline">
+        <mat-label>Facility type</mat-label>
+        <mat-select>
+          <mat-option value=""> --- </mat-option>
+          <mat-option value="">Laboratory</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Facility name</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Facility code</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Facility description</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Facility structure</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Facility purpose</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Number of storeys</mat-label>
+        <input matInput type="number">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Facility status</mat-label>
+        <mat-select>
+          <mat-option value="">---</mat-option>
+          <mat-option value="">Good</mat-option>
+          <mat-option value="">Abandoned</mat-option>
+          <mat-option value="">Repairable</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Date built</mat-label>
+        <input matInput type="date">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Date purchased</mat-label>
+        <input matInput type="date">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>GIS longitude</mat-label>
+        <input matInput type="number">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>GIS latitude</mat-label>
+        <input matInput type="number">
+      </mat-form-field>
+
+    </div>
+    </form>
+  </mat-step>
+
+  <!-- Structure and interior -->
+  <mat-step label="Structure and interior">
+
+    <form>
+      <mat-form-field>
+        <mat-label></mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+    </form>
+  </mat-step>
+
+  <!-- Services -->
+  <mat-step label="Services">
+
+    <form>
+      <mat-form-field>
+        <mat-label></mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+    </form>
+  </mat-step>
+
+
+</mat-vertical-stepper>

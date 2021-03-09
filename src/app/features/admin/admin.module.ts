@@ -25,6 +25,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatStepperModule } from '@angular/material/stepper';
 
 //FlexLayoutModule
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -44,6 +45,7 @@ import { BuildingSummaryComponent } from './components/building-summary/building
 import { BuildingComponent } from './components/building/building.component';
 import { SummaryComponent } from './components/summary/summary.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { AddBuildingComponent } from './components/add-building/add-building.component';
 
 
 //import { WebsocketService } from './services/websocket.service';
@@ -60,7 +62,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BuildingSummaryComponent,
     BuildingComponent,
     SummaryComponent,
-    FooterComponent
+    FooterComponent,
+    AddBuildingComponent
   ],
   imports: [
     CommonModule,
@@ -85,6 +88,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatListModule,
     MatGridListModule,
     MatDatepickerModule,
+    MatStepperModule,
     AdminRoutingModule
   ],
   exports: [

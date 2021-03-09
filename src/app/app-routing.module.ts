@@ -9,7 +9,7 @@ const routes: Routes = [
     loadChildren : ()=>import('./auth/auth.module').then(mod => mod.AuthModule)
   },
   {
-    path: 'a',
+    path: 'admin',
     loadChildren : ()=>import('./features/admin/admin.module').then(mod=>mod.AdminModule),
     canActivate: [AuthGuard]
   },
