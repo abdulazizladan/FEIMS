@@ -26,6 +26,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatCheckboxModule } from '@angular/material/checkbox'
+import { MatRadioModule } from '@angular/material/radio';
 
 //FlexLayoutModule
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -89,6 +91,8 @@ import { AddBuildingComponent } from './components/add-building/add-building.com
     MatGridListModule,
     MatDatepickerModule,
     MatStepperModule,
+    MatCheckboxModule,
+    MatRadioModule,
     AdminRoutingModule
   ],
   exports: [
