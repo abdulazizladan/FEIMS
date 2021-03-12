@@ -1,13 +1,15 @@
 <!--Buildings component -->
-<div  style="padding: 20px" fxLayout.xs="column" fxLayoutGap="40px grid" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-around stretch">
-
-  <app-building fxFlexAlign.gt-xs="stretch" fxFlex.xs="100%" fxFlex.gt-xs="400px" *ngFor="let a of A" [data]="a"></app-building>
-
-</div>
-<div>
+<div style="padding: 10px">
   <span fxFlex="1 1 auto"></span>
   <button mat-raised-button color="primary" (click)="openAddDialog()">
     <mat-icon>add</mat-icon>
     Add building
   </button>
 </div>
+
+<div  style="padding: 20px" fxLayout.xs="column" fxLayoutGap="40px grid" fxLayout.gt-xs="row wrap" fxLayoutAlign.gt-xs="space-around stretch">
+
+  <app-building fxFlexAlign.gt-xs="stretch" fxFlex.xs="100%" fxFlex.gt-xs="400px" *ngFor="let a of A" [data]="a"></app-building>
+
+</div>
+

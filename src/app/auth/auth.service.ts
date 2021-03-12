@@ -1,6 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type':  'application/json',
+    'Access-Control-Allow-Origin': '*',
+    'X-Powered-By': 'Express'
+
+  })
+};
+
 @Injectable({
   providedIn: 'root'
 })
@@ -14,7 +23,7 @@ export class AuthService {
    }
 
   login(credentials: {email: String, password: string}){
-    return this._http.post<any>( this.loginUrl, credentials)
+    return this._http.post<any>( this.loginUrl, credentials, httpOptions)
   }
 
   register(value: {email: string, password: string}){
