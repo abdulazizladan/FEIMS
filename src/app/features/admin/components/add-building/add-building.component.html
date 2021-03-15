@@ -90,77 +90,77 @@
   <mat-step label="Structure and interior" [stepControl]="secondFormGroup">
 
     <form [formGroup]="secondFormGroup">
-
+      <div>
       <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
         <legend>Building Dimensions</legend>
-      <mat-form-field>
-        <mat-label>Floor area</mat-label>
-        <span matSuffix>m<sup>2</sup></span>
-        <input matInput type="number" required>
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Floor area</mat-label>
+          <span matSuffix>m<sup>2</sup></span>
+          <input matInput type="number" formControlName="buildingFloorArea" required>
+        </mat-form-field>
 
-      <mat-form-field>
-        <mat-label>Headroom</mat-label>
-        <span matSuffix>m</span>
-        <input matInput type="number" required>
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Headroom</mat-label>
+          <span matSuffix>m</span>
+          <input matInput type="number" formControlName="buildingHeadroom" required>
+        </mat-form-field>
 
-      <mat-form-field>
-        <mat-label>Number of floors</mat-label>
-        <input matInput type="number" required>
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Number of floors</mat-label>
+          <input matInput type="number" formControlName="numberOfFloors" required>
+        </mat-form-field>
 
-      <mat-form-field>
-        <mat-label>Super structure</mat-label>
-        <mat-select required>
-          <mat-option value="">----</mat-option>
-          <mat-option value="metal">Metal</mat-option>
-          <mat-option value="wood">Wood</mat-option>
-          <mat-option value="sheetrock">Sheetrock</mat-option>
-          <mat-option value="plaster">Plaster</mat-option>
-          <mat-option value="concrete">Concrete</mat-option>
-          <mat-option value="brick">Brick</mat-option>
-          <mat-option value="paneling">Paneling</mat-option>
-          <mat-option value="other">Other</mat-option>
-        </mat-select>
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Super structure</mat-label>
+          <mat-select formControlName="superStructure" required>
+            <mat-option value="">----</mat-option>
+            <mat-option value="metal">Metal</mat-option>
+            <mat-option value="wood">Wood</mat-option>
+            <mat-option value="sheetrock">Sheetrock</mat-option>
+            <mat-option value="plaster">Plaster</mat-option>
+            <mat-option value="concrete">Concrete</mat-option>
+            <mat-option value="brick">Brick</mat-option>
+            <mat-option value="paneling">Paneling</mat-option>
+            <mat-option value="other">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
 
-      <mat-form-field>
-        <mat-label>Floor structure</mat-label>
-        <mat-select required>
-          <mat-option value="">----</mat-option>
-          <mat-option value="metal">Metal</mat-option>
-          <mat-option value="wood">Wood</mat-option>
-          <mat-option value="concrete">Concrete</mat-option>
-          <mat-option value="other">Other</mat-option>
-        </mat-select>
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Floor structure</mat-label>
+          <mat-select formControlName="floorStructure" required>
+            <mat-option value="">----</mat-option>
+            <mat-option value="metal">Metal</mat-option>
+            <mat-option value="wood">Wood</mat-option>
+            <mat-option value="concrete">Concrete</mat-option>
+            <mat-option value="other">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
 
-      <mat-form-field>
-        <mat-label>Floor covering</mat-label>
-        <mat-select required>
-          <mat-option value="">----</mat-option>
-          <mat-option value="wood">metal</mat-option>
-          <mat-option value="concrete">wood</mat-option>
-          <mat-option value="carpet">concrete</mat-option>
-          <mat-option value="vinyl">vinyl</mat-option>
-          <mat-option value="other">Other</mat-option>
-        </mat-select>
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Floor covering</mat-label>
+          <mat-select formControlName="floorCovering" required>
+            <mat-option value="">----</mat-option>
+            <mat-option value="wood">metal</mat-option>
+            <mat-option value="concrete">wood</mat-option>
+            <mat-option value="carpet">concrete</mat-option>
+            <mat-option value="vinyl">vinyl</mat-option>
+            <mat-option value="other">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
 
-      <mat-form-field>
-        <mat-label>Windows</mat-label>
-        <mat-select required>
-          <mat-option value="">----</mat-option>
-          <mat-option value="wire_glass">Wire glass</mat-option>
-          <mat-option value="glass_block">Glass block</mat-option>
-          <mat-option value="plate">Plate</mat-option>
-          <mat-option value="tempered">Tempered</mat-option>
-          <mat-option value="operating">Operating</mat-option>
-          <mat-option value="fixed">Fixed</mat-option>
-          <mat-option value="other">Other</mat-option>
-        </mat-select>
-      </mat-form-field>
+        <mat-form-field>
+          <mat-label>Windows</mat-label>
+          <mat-select formControlName="windows" required>
+            <mat-option value="">----</mat-option>
+            <mat-option value="wire_glass">Wire glass</mat-option>
+            <mat-option value="glass_block">Glass block</mat-option>
+            <mat-option value="plate">Plate</mat-option>
+            <mat-option value="tempered">Tempered</mat-option>
+            <mat-option value="operating">Operating</mat-option>
+            <mat-option value="fixed">Fixed</mat-option>
+            <mat-option value="other">Other</mat-option>
+          </mat-select>
+        </mat-form-field>
 
       </fieldset>
 
@@ -169,7 +169,7 @@
 
         <mat-form-field>
           <mat-label>Exterior wall</mat-label>
-          <mat-select>
+          <mat-select formControlName="exteriorWall" required>
             <mat-option value="">-----</mat-option>
             <mat-option value="concrete_wall">Concrete wall</mat-option>
             <mat-option value="150mm">150mm block wall</mat-option>
@@ -180,7 +180,7 @@
 
         <mat-form-field>
           <mat-label>Paint condition</mat-label>
-          <mat-select required>
+          <mat-select formControlName="paintCondition" required>
             <mat-option value="">-----</mat-option>
             <mat-option value="good">good</mat-option>
             <mat-option value="fair">fair</mat-option>
@@ -190,7 +190,7 @@
 
         <mat-form-field>
           <mat-label>Mortar condition</mat-label>
-          <mat-select required>
+          <mat-select formControlName="mortarCondition" required>
             <mat-option value="">-----</mat-option>
             <mat-option value="good">good</mat-option>
             <mat-option value="fair">fair</mat-option>
@@ -200,7 +200,7 @@
 
         <mat-form-field>
           <mat-label>Type of structure</mat-label>
-          <mat-select>
+          <mat-select formControlName="structureType" required>
             <mat-option value="">-----</mat-option>
             <mat-option value="frame">Frame</mat-option>
             <mat-option value="load bearing">Load bearing</mat-option>
@@ -209,19 +209,17 @@
 
         <mat-form-field>
           <mat-label>Year when last decorated</mat-label>
-          <input matInput type="number">
+          <input matInput formControlName="yearDecorated" type="number">
         </mat-form-field>
-
 
       </fieldset>
 
       <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
-
         <legend>Floor joints and beams</legend>
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="text">
+          <input formControlName="floorMaterials" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
@@ -498,262 +496,262 @@
 
       </fieldset>
 
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
 
-        <legend>Building windows</legend>
+          <legend>Building windows</legend>
 
-        <mat-form-field>
-          <mat-label>Materials</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Materials</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Finishes</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Finishes</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Condition</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Condition</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
-          <span matPrefix>&#8358;</span><span matSuffix>.00</span>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Estimated cost</mat-label>
+            <input matInput type="text">
+            <span matPrefix>&#8358;</span><span matSuffix>.00</span>
+          </mat-form-field>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
 
-        <legend>Corridors</legend>
+          <legend>Corridors</legend>
 
-        <mat-form-field>
-          <mat-label>Materials</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Materials</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Finishes</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Finishes</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Condition</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Condition</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
-          <span matPrefix>&#8358;</span><span matSuffix>.00</span>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Estimated cost</mat-label>
+            <input matInput type="text">
+            <span matPrefix>&#8358;</span><span matSuffix>.00</span>
+          </mat-form-field>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
 
-        <legend>Glazing</legend>
+          <legend>Glazing</legend>
 
-        <mat-form-field>
-          <mat-label>Materials</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Materials</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Finishes</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Finishes</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Condition</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Condition</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
-          <span matPrefix>&#8358;</span><span matSuffix>.00</span>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Estimated cost</mat-label>
+            <input matInput type="text">
+            <span matPrefix>&#8358;</span><span matSuffix>.00</span>
+          </mat-form-field>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
 
-        <legend>Partitions</legend>
+          <legend>Partitions</legend>
 
-        <mat-form-field>
-          <mat-label>Materials</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Materials</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Finishes</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Finishes</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Condition</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Condition</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
-          <span matPrefix>&#8358;</span><span matSuffix>.00</span>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Estimated cost</mat-label>
+            <input matInput type="text">
+            <span matPrefix>&#8358;</span><span matSuffix>.00</span>
+          </mat-form-field>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
 
-        <legend>Entrances and Access spaces</legend>
+          <legend>Entrances and Access spaces</legend>
 
-        <mat-form-field>
-          <mat-label>Materials</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Materials</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Finishes</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Finishes</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Condition</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Condition</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
-          <span matPrefix>&#8358;</span><span matSuffix>.00</span>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Estimated cost</mat-label>
+            <input matInput type="text">
+            <span matPrefix>&#8358;</span><span matSuffix>.00</span>
+          </mat-form-field>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
 
-        <legend>Service ducts</legend>
+          <legend>Service ducts</legend>
 
-        <mat-form-field>
-          <mat-label>Materials</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Materials</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Finishes</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Finishes</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Condition</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Condition</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
-          <span matPrefix>&#8358;</span><span matSuffix>.00</span>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Estimated cost</mat-label>
+            <input matInput type="text">
+            <span matPrefix>&#8358;</span><span matSuffix>.00</span>
+          </mat-form-field>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
 
-        <legend>Furniture/Fittings</legend>
+          <legend>Furniture/Fittings</legend>
 
-        <mat-form-field>
-          <mat-label>Materials</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Materials</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Finishes</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Finishes</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Condition</mat-label>
-          <input matInput type="text">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Condition</mat-label>
+            <input matInput type="text">
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
-          <span matPrefix>&#8358;</span><span matSuffix>.00</span>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Estimated cost</mat-label>
+            <input matInput type="text">
+            <span matPrefix>&#8358;</span><span matSuffix>.00</span>
+          </mat-form-field>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
 
-        <legend>Elevators</legend>
+          <legend>Elevators</legend>
 
-        <mat-form-field>
-          <mat-label>Number of elevators</mat-label>
-          <input matInput type="number">
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Number of elevators</mat-label>
+            <input matInput type="number">
+          </mat-form-field>
 
 
-        <br>
-        <mat-radio-group>
-          <mat-radio-button value="electric">Electric</mat-radio-button>
-          <mat-radio-button value="hydraulic">Hydraulic</mat-radio-button>
-        </mat-radio-group>
-        <br>
+          <br>
+          <mat-radio-group>
+            <mat-radio-button value="electric">Electric</mat-radio-button>
+            <mat-radio-button value="hydraulic">Hydraulic</mat-radio-button>
+          </mat-radio-group>
+          <br>
 
-        <ul>
-          <li>
-            <mat-checkbox>Electric eye</mat-checkbox>
-          </li>
-          <li>
-            <mat-checkbox>Heat sensor</mat-checkbox>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <mat-checkbox>Electric eye</mat-checkbox>
+            </li>
+            <li>
+              <mat-checkbox>Heat sensor</mat-checkbox>
+            </li>
+          </ul>
 
-        <mat-form-field>
-          <mat-label>Key location</mat-label>
-          <input matInput type="text" required>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Key location</mat-label>
+            <input matInput type="text" required>
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Brand name</mat-label>
-          <input matInput type="text" required>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Brand name</mat-label>
+            <input matInput type="text" required>
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Service company</mat-label>
-          <input matInput type="text" required>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Service company</mat-label>
+            <input matInput type="text" required>
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Phone number</mat-label>
-          <input matInput type="tel" required>
-          <mat-icon matSuffix>phone</mat-icon>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Phone number</mat-label>
+            <input matInput type="tel" required>
+            <mat-icon matSuffix>phone</mat-icon>
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Emergency shutoff location</mat-label>
-          <input matInput type="text" required>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Emergency shutoff location</mat-label>
+            <input matInput type="text" required>
+          </mat-form-field>
 
-        <mat-form-field>
-          <mat-label>Exit</mat-label>
-          <mat-select>
-            <mat-option value="">-----</mat-option>
-            <mat-option value="top">Top</mat-option>
-            <mat-option value="side">Side</mat-option>
-            <mat-option value="dumb_waiter">Dumb waiter</mat-option>
-            <mat-option value="laundry_chute">Laundry chute</mat-option>
-            <mat-option value="trash_chute">Trash chute</mat-option>
-            <mat-option value="other">Other</mat-option>
-          </mat-select>
-        </mat-form-field>
+          <mat-form-field>
+            <mat-label>Exit</mat-label>
+            <mat-select>
+              <mat-option value="">-----</mat-option>
+              <mat-option value="top">Top</mat-option>
+              <mat-option value="side">Side</mat-option>
+              <mat-option value="dumb_waiter">Dumb waiter</mat-option>
+              <mat-option value="laundry_chute">Laundry chute</mat-option>
+              <mat-option value="trash_chute">Trash chute</mat-option>
+              <mat-option value="other">Other</mat-option>
+            </mat-select>
+          </mat-form-field>
 
-      </fieldset>
-
+        </fieldset>
+      </div>
     </form>
 
     <div>
@@ -1112,7 +1110,7 @@
       <div>
         <button matStepperPrevious mat-flat-button color="primary">Previous</button>
         <span fxFlex="1 1 auto"></span>
-        <button mat-flat-button color="primary">Submit</button>
+        <button mat-flat-button color="primary" (click)="addBuildings()">Submit</button>
       </div>
 
     </form>
@@ -1122,7 +1120,7 @@
 
   <mat-dialog-actions align="end">
     <button mat-button mat-dialog-close>Cancel</button>
-    <button mat-button color="primary" (click)="submitForm()">Submit building data</button>
+    <button mat-button color="primary">Submit building data</button>
   </mat-dialog-actions>
 
 </mat-horizontal-stepper>

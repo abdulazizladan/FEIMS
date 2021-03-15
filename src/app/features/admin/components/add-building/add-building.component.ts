@@ -57,7 +57,60 @@ export class AddBuildingComponent implements OnInit {
     })
 
     this.secondFormGroup = this.fb.group({
-
+      buildingFloorArea: ['', [
+        Validators.required
+      ]],
+      buildingHeadroom: ['', [
+        Validators.required
+      ]],
+      numberOfFloors: ['', [
+        Validators.required
+      ]],
+      superStructure: ['', [
+        Validators.required
+      ]],
+      floorStructure: ['', [
+        Validators.required
+      ]],
+      floorCovering: ['', [
+        Validators.required
+      ]],
+      windows: ['', [
+        Validators.required
+      ]],
+      exteriorWall: ['', [
+        Validators.required
+      ]],
+      paintCondition: ['', [
+        Validators.required
+      ]],
+      mortarCondition: ['', [
+        Validators.required
+      ]],
+      structureType: ['', [
+        Validators.required
+      ]],
+      yearDecorated: ['', [
+        Validators.required
+      ]],
+      floorMaterials: ['', [
+        Validators.required
+      ]],
+      floorFinishes: ['', [
+        Validators.required
+      ]],
+      floorCondition: ['', [
+        Validators.required
+      ]],
+      floorRepairCost: ['', [
+        Validators.required
+      ]],
+      ceilingMaterial: ['', [
+        Validators.required
+      ]],
+      ceilingFinishes: ['', [
+        Validators.required
+      ]]
     })
 
     this.thirdFormGroup = this.fb.group({
@@ -69,15 +122,19 @@ export class AddBuildingComponent implements OnInit {
 
   }
 
-  submitForm(){
+  addBuilding(){
     this.buildingService.addBuilding(this.addBuildingForm.value).subscribe(
-      res=>{
-        console.log("Submitting...")
-      },err=>{
-        console.log("Unable to submit!")
-      }
-    )
+      //res=>{
+      //  console.log(this.firstFormGroup.value)
+      //},err=>{
+      //  console.log("error submitting form data.")
+      //}
 
+    )
+  }
+
+  addBuildings(){
+    console.log(this.firstFormGroup.value)
   }
 
 }
