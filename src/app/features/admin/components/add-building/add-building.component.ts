@@ -90,7 +90,7 @@ export class AddBuildingComponent implements OnInit {
       structureType: ['', [
         Validators.required
       ]],
-      yearDecorated: ['', [
+      yearDecorated: [0, [
         Validators.required
       ]],
       floorJointsMaterials: ['', [
@@ -114,7 +114,7 @@ export class AddBuildingComponent implements OnInit {
       ceilingCondition: ['', [
         Validators.required
       ]],
-      ceilingRepairCost: ['', [
+      ceilingRepairCost: [0, [
         Validators.required
       ]],
       fanLightMaterial: ['', [
@@ -126,7 +126,7 @@ export class AddBuildingComponent implements OnInit {
       fanLightCondition: ['', [
         Validators.required
       ]],
-      fanLightRepairCost: ['', [
+      fanLightRepairCost: [0, [
         Validators.required
       ]],
       doorsMaterial: ['', [
@@ -138,7 +138,7 @@ export class AddBuildingComponent implements OnInit {
       doorsCondition: ['', [
         Validators.required
       ]],
-      doorsRepairCost: ['', [
+      doorsRepairCost: [0, [
         Validators.required
       ]],
       roofStyleShape: ['', [
@@ -159,7 +159,7 @@ export class AddBuildingComponent implements OnInit {
       trimCondition: ['', [
         Validators.required
       ]],
-      trimRepairCost: ['', [
+      trimRepairCost: [0, [
         Validators.required
       ]],
       foundationMaterial: ['', [
@@ -171,7 +171,7 @@ export class AddBuildingComponent implements OnInit {
       foundationCondition: ['', [
         Validators.required
       ]],
-      foundationRepairCost: ['', [
+      foundationRepairCost: [0, [
         Validators.required
       ]],
       floorSlabsMaterial: ['', [
@@ -183,7 +183,7 @@ export class AddBuildingComponent implements OnInit {
       floorSlabsCondition: ['', [
         Validators.required
       ]],
-      floorSlabsRepairCost: ['', [
+      floorSlabsRepairCost: [0, [
         Validators.required
       ]],
       frameMaterial: ['', [
@@ -195,7 +195,7 @@ export class AddBuildingComponent implements OnInit {
       frameCondition: ['', [
         Validators.required
       ]],
-      frameRepairCost: ['', [
+      frameRepairCost: [0, [
         Validators.required
       ]],
       buildingFacadeMaterial: ['', [
@@ -207,7 +207,7 @@ export class AddBuildingComponent implements OnInit {
       buildingFacadeCondition: ['', [
         Validators.required
       ]],
-      buildingFacadeRepairCost: ['', [
+      buildingFacadeRepairCost: [0, [
         Validators.required
       ]],
       buildingWindowsMaterial: ['', [
@@ -219,7 +219,7 @@ export class AddBuildingComponent implements OnInit {
       buildingWindowsCondition: ['', [
         Validators.required
       ]],
-      buildingWindowsRepairCost: ['', [
+      buildingWindowsRepairCost: [0, [
         Validators.required
       ]],
       corridorsMaterial: ['', [
@@ -231,7 +231,7 @@ export class AddBuildingComponent implements OnInit {
       corridorsCondition: ['', [
         Validators.required
       ]],
-      corridorsRepairCost: ['', [
+      corridorsRepairCost: [0, [
         Validators.required
       ]],
       glazingMaterial: ['', [
@@ -243,7 +243,7 @@ export class AddBuildingComponent implements OnInit {
       glazingCondition: ['', [
         Validators.required
       ]],
-      glazingRepairCost: ['', [
+      glazingRepairCost: [0, [
         Validators.required
       ]],
       partitionsMaterial: ['', [
@@ -255,7 +255,7 @@ export class AddBuildingComponent implements OnInit {
       partitionsCondition: ['', [
         Validators.required
       ]],
-      partitionsRepairCost: ['', [
+      partitionsRepairCost: [0, [
         Validators.required
       ]],
       entrancesMaterial: ['', [
@@ -267,7 +267,7 @@ export class AddBuildingComponent implements OnInit {
       entrancesCondition: ['', [
         Validators.required
       ]],
-      entrancesRepairCost: ['', [
+      entrancesRepairCost: [0, [
         Validators.required
       ]],
       serviceDuctMaterial: ['', [
@@ -279,7 +279,7 @@ export class AddBuildingComponent implements OnInit {
       serviceDuctCondition: ['', [
         Validators.required
       ]],
-      serviceDuctRepairCost: ['', [
+      serviceDuctRepairCost: [0, [
         Validators.required
       ]],
       furnitureMaterial: ['', [
@@ -309,13 +309,13 @@ export class AddBuildingComponent implements OnInit {
       serviceCompany: ['', [
 
       ]],
-      phoneNumber: ['', [
+      elevatorServicePhoneNumber: ['', [
 
       ]],
       emergencyShutoffLocation: ['', [
 
       ]],
-      exit: ['', [
+      elevatorExit: ['', [
 
       ]]
     })

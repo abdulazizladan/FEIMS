@@ -698,7 +698,7 @@
           <br>
           <div style="padding: 10px">
             <div class="mat-title">Elevator type</div>
-          <mat-radio-group>
+          <mat-radio-group formControlName="elevatorType">
             <mat-radio-button style="margin-left: 16px;" value="electric">Electric</mat-radio-button>
             <mat-radio-button style="margin-left: 16px;" value="hydraulic">Hydraulic</mat-radio-button>
           </mat-radio-group>
@@ -709,43 +709,43 @@
             <div class="mat-title">Elevator sensors</div>
           <ul>
             <li>
-              <mat-checkbox>Electric eye</mat-checkbox>
+              <mat-checkbox value="electricEye">Electric eye</mat-checkbox>
             </li>
             <li>
-              <mat-checkbox>Heat sensor</mat-checkbox>
+              <mat-checkbox value="heatSensor">Heat sensor</mat-checkbox>
             </li>
           </ul>
           </div>
 
           <mat-form-field>
             <mat-label>Key location</mat-label>
-            <input matInput type="text" required>
+            <input formControlName="keyLocation" matInput type="text" required>
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Brand name</mat-label>
-            <input matInput type="text" required>
+            <input formControlName="brandName" matInput type="text" required>
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Service company</mat-label>
-            <input matInput type="text" required>
+            <input formControlName="serviceCompany" matInput type="text" required>
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Phone number</mat-label>
-            <input matInput type="tel" required>
+            <input formControlName="elevatorServicePhoneNumber" matInput type="tel" required>
             <mat-icon matSuffix>phone</mat-icon>
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Emergency shutoff location</mat-label>
-            <input matInput type="text" required>
+            <input formControlName="emergencyShutoffLocation" matInput type="text" required>
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Exit</mat-label>
-            <mat-select>
+            <mat-select formControlName="elevatorExit">
               <mat-option value="">-----</mat-option>
               <mat-option value="top">Top</mat-option>
               <mat-option value="side">Side</mat-option>
