@@ -7,7 +7,7 @@
   <mat-step label="Building survey" [stepControl]="firstFormGroup">
 
     <form [formGroup]="firstFormGroup">
-      <div fxLayout.xs="column" fxLayout.gt-xs="row wrap" fxLayoutGap="10px grid">
+      <div fxLayout.xs="column" fxLayout.gt-xs="row wrap" fxLayoutGap="20px grid">
       <mat-form-field>
         <mat-label>Facility type</mat-label>
         <mat-select formControlName="facilityType" name="facilityType">
@@ -28,7 +28,7 @@
         <input matInput type="text" formControlName="facilityCode">
       </mat-form-field>
 
-      <mat-form-field fxFlex.gt-xs="320px">
+      <mat-form-field fxFlex="1 1 auto" fxFlex.gt-xs="320px">
         <mat-label>Facility description</mat-label>
         <input matInput type="text" formControlName="facilityDescription">
       </mat-form-field>
@@ -691,12 +691,13 @@
 
           <mat-form-field>
             <mat-label>Number of elevators</mat-label>
-            <input matInput type="number">
+            <input formControlName="elevatorsCount" matInput type="number">
           </mat-form-field>
 
 
           <br>
           <div style="padding: 10px">
+            <div class="mat-title">Elevator type</div>
           <mat-radio-group>
             <mat-radio-button style="margin-left: 16px;" value="electric">Electric</mat-radio-button>
             <mat-radio-button style="margin-left: 16px;" value="hydraulic">Hydraulic</mat-radio-button>
@@ -704,7 +705,8 @@
           </div>
           <br>
 
-          <div>
+          <div style="padding: 10px">
+            <div class="mat-title">Elevator sensors</div>
           <ul>
             <li>
               <mat-checkbox>Electric eye</mat-checkbox>

@@ -36,7 +36,7 @@ export class AddBuildingComponent implements OnInit {
       facilityPurpose: ['', [
         Validators.required
       ]],
-      numberOfStoreys: ['', [
+      numberOfStoreys: [0, [
         Validators.required
       ]],
       facilityStatus: ['', [
@@ -48,22 +48,22 @@ export class AddBuildingComponent implements OnInit {
       facilityDatePurchased: ['', [
         Validators.required
       ]],
-      facilityLongitude: ['', [
+      facilityLongitude: [0, [
         Validators.required
       ]],
-      facilityLatitude: ['', [
+      facilityLatitude: [0, [
         Validators.required
       ]]
     })
 
     this.secondFormGroup = this.fb.group({
-      buildingFloorArea: ['', [
+      buildingFloorArea: [0, [
         Validators.required
       ]],
-      buildingHeadroom: ['', [
+      buildingHeadroom: [0, [
         Validators.required
       ]],
-      numberOfFloors: ['', [
+      numberOfFloors: [0, [
         Validators.required
       ]],
       superStructure: ['', [
@@ -102,7 +102,7 @@ export class AddBuildingComponent implements OnInit {
       floorJointsCondition: ['', [
         Validators.required
       ]],
-      floorJointsRepairCost: ['', [
+      floorJointsRepairCost: [0, [
         Validators.required
       ]],
       ceilingMaterial: ['', [
@@ -294,8 +294,29 @@ export class AddBuildingComponent implements OnInit {
       furnitureRepairCost: ['', [
         Validators.required
       ]],
-      elevatorsCount: ['', [
-        Validators.required
+      elevatorsCount: [0, [
+
+      ]],
+      elevatorType: ['', [
+
+      ]],
+      keyLocation: ['', [
+
+      ]],
+      brandName: ['', [
+
+      ]],
+      serviceCompany: ['', [
+
+      ]],
+      phoneNumber: ['', [
+
+      ]],
+      emergencyShutoffLocation: ['', [
+
+      ]],
+      exit: ['', [
+
       ]]
     })
 
