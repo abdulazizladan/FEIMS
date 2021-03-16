@@ -219,22 +219,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input formControlName="floorMaterials" matInput type="text">
+          <input formControlName="floorJointsMaterials" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="text">
+          <input formControlName="floorJointsFinishes" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="text">
+          <input formControlName="floorJointsCondition" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
+          <input matInput formControlName="floorJointsRepairCost" type="text">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -246,22 +246,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="text">
+          <input formControlName="ceilingMaterial" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="text">
+          <input formControlName="ceilingFinishes" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="text">
+          <input formControlName="ceilingCondition" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
+          <input matInput formControlName="ceilingRepairCost" type="text">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -273,22 +273,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="text">
+          <input formControlName="fanLightMaterial" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="text">
+          <input formControlName="fanLightFinishes" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="text">
+          <input formControlName="fanLightCondition" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
+          <input formControlName="fanLightRepairCost" matInput type="text">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -300,22 +300,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="number">
+          <input formControlName="doorsMaterial" matInput type="number">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="number">
+          <input formControlName="doorsFinishes" matInput type="number">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="number">
+          <input formControlName="doorsCondition" matInput type="number">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="number">
+          <input formControlName="doorsRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -327,7 +327,7 @@
 
         <mat-form-field>
           <mat-label>Roof style/shape</mat-label>
-          <mat-select>
+          <mat-select formControlName="roofStyleShape">
             <mat-option value="">-----</mat-option>
             <mat-option value="flat">Flat</mat-option>
             <mat-option value="pitched">Pitched</mat-option>
@@ -346,12 +346,12 @@
 
         <mat-form-field>
           <mat-label>Truss type</mat-label>
-          <input matInput type="text">
+          <input formControlName="roofTrussType" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Decking material</mat-label>
-          <mat-select>
+          <mat-select formControlName="roofDeckingMaterial">
             <mat-option value="">----</mat-option>
             <mat-option value="wood">Wood</mat-option>
             <mat-option value="concrete">Concrete</mat-option>
@@ -367,22 +367,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="text">
+          <input formControlName="trimMaterial" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="text">
+          <input formControlName="trimFinishes" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="text">
+          <input formControlName="trimCondition" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
+          <input formControlName="trimRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -394,22 +394,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="text">
+          <input formControlName="foundationMaterial" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="text">
+          <input formControlName="foundationFinishes" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="text">
+          <input formControlName="foundationCondition" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
+          <input formControlName="foundationRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -421,22 +421,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="text">
+          <input formControlName="floorSlabsMaterial" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="text">
+          <input formControlName="floorSlabsFinishes" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="text">
+          <input formControlName="floorSlabsCondition" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
+          <input formControlName="floorSlabsRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -448,22 +448,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="text">
+          <input formControlName="frameMaterial" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="text">
+          <input formControlName="frameFinishes" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="text">
+          <input formControlName="frameCondition" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
+          <input formControlName="frameRepairCost" matInput type="text">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -475,22 +475,22 @@
 
         <mat-form-field>
           <mat-label>Materials</mat-label>
-          <input matInput type="text">
+          <input formControlName="buildingFacadeMaterial" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Finishes</mat-label>
-          <input matInput type="text">
+          <input formControlName="buildingFacadeFinishes" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Condition</mat-label>
-          <input matInput type="text">
+          <input formControlName="buildingFacadeCondition" matInput type="text">
         </mat-form-field>
 
         <mat-form-field>
           <mat-label>Estimated cost</mat-label>
-          <input matInput type="text">
+          <input formControlName="buildingFacadeRepairCost" matInput type="text">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
 
@@ -502,22 +502,22 @@
 
           <mat-form-field>
             <mat-label>Materials</mat-label>
-            <input matInput type="text">
+            <input formControlName="buildingWindowsMaterial" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Finishes</mat-label>
-            <input matInput type="text">
+            <input formControlName="buildingWindowsFinishes" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Condition</mat-label>
-            <input matInput type="text">
+            <input formControlName="buildingWindowsCondition" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Estimated cost</mat-label>
-            <input matInput type="text">
+            <input formControlName="buildingWindowsRepairCost" matInput type="text">
             <span matPrefix>&#8358;</span><span matSuffix>.00</span>
           </mat-form-field>
 
@@ -529,22 +529,22 @@
 
           <mat-form-field>
             <mat-label>Materials</mat-label>
-            <input matInput type="text">
+            <input formControlName="corridorsMaterial" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Finishes</mat-label>
-            <input matInput type="text">
+            <input formControlName="corridorsFinishes" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Condition</mat-label>
-            <input matInput type="text">
+            <input formControlName="corridorsCondition" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Estimated cost</mat-label>
-            <input matInput type="text">
+            <input formControlName="corridorsRepairCost" matInput type="text">
             <span matPrefix>&#8358;</span><span matSuffix>.00</span>
           </mat-form-field>
 
@@ -556,22 +556,22 @@
 
           <mat-form-field>
             <mat-label>Materials</mat-label>
-            <input matInput type="text">
+            <input formControlName="glazingMaterial" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Finishes</mat-label>
-            <input matInput type="text">
+            <input formControlName="glazingFinishes" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Condition</mat-label>
-            <input matInput type="text">
+            <input formControlName="glazingCondition" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Estimated cost</mat-label>
-            <input matInput type="text">
+            <input formControlName="glazingRepairCost" matInput type="text">
             <span matPrefix>&#8358;</span><span matSuffix>.00</span>
           </mat-form-field>
 
@@ -583,22 +583,22 @@
 
           <mat-form-field>
             <mat-label>Materials</mat-label>
-            <input matInput type="text">
+            <input formControlName="partitionsMaterial" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Finishes</mat-label>
-            <input matInput type="text">
+            <input formControlName="partitionsFinishes" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Condition</mat-label>
-            <input matInput type="text">
+            <input formControlName="partitionsCondition" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Estimated cost</mat-label>
-            <input matInput type="text">
+            <input formControlName="partitionsRepairCost" matInput type="text">
             <span matPrefix>&#8358;</span><span matSuffix>.00</span>
           </mat-form-field>
 
@@ -610,22 +610,22 @@
 
           <mat-form-field>
             <mat-label>Materials</mat-label>
-            <input matInput type="text">
+            <input formControlName="entrancesMaterial" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Finishes</mat-label>
-            <input matInput type="text">
+            <input formControlName="entrancesFinishes" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Condition</mat-label>
-            <input matInput type="text">
+            <input formControlName="entrancesCondition" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Estimated cost</mat-label>
-            <input matInput type="text">
+            <input formControlName="entrancesRepairCost" matInput type="text">
             <span matPrefix>&#8358;</span><span matSuffix>.00</span>
           </mat-form-field>
 
@@ -637,22 +637,22 @@
 
           <mat-form-field>
             <mat-label>Materials</mat-label>
-            <input matInput type="text">
+            <input formControlName="serviceDuctMaterial" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Finishes</mat-label>
-            <input matInput type="text">
+            <input formControlName="serviceDuctFinishes" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Condition</mat-label>
-            <input matInput type="text">
+            <input formControlName="serviceDuctCondition" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Estimated cost</mat-label>
-            <input matInput type="text">
+            <input formControlName="serviceDuctRepairCost" matInput type="text">
             <span matPrefix>&#8358;</span><span matSuffix>.00</span>
           </mat-form-field>
 
@@ -664,28 +664,28 @@
 
           <mat-form-field>
             <mat-label>Materials</mat-label>
-            <input matInput type="text">
+            <input formControlName="furnitureMaterial" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Finishes</mat-label>
-            <input matInput type="text">
+            <input formControlName="furnitureFinishes" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Condition</mat-label>
-            <input matInput type="text">
+            <input formControlName="furnitureCondition" matInput type="text">
           </mat-form-field>
 
           <mat-form-field>
             <mat-label>Estimated cost</mat-label>
-            <input matInput type="text">
+            <input formControlName="furnitureRepairCost" matInput type="text">
             <span matPrefix>&#8358;</span><span matSuffix>.00</span>
           </mat-form-field>
 
         </fieldset>
 
-        <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
+        <fieldset fxLayout="column" fxLayoutGap="10px grid">
 
           <legend>Elevators</legend>
 
@@ -696,12 +696,15 @@
 
 
           <br>
+          <div style="padding: 10px">
           <mat-radio-group>
-            <mat-radio-button value="electric">Electric</mat-radio-button>
-            <mat-radio-button value="hydraulic">Hydraulic</mat-radio-button>
+            <mat-radio-button style="margin-left: 16px;" value="electric">Electric</mat-radio-button>
+            <mat-radio-button style="margin-left: 16px;" value="hydraulic">Hydraulic</mat-radio-button>
           </mat-radio-group>
+          </div>
           <br>
 
+          <div>
           <ul>
             <li>
               <mat-checkbox>Electric eye</mat-checkbox>
@@ -710,6 +713,7 @@
               <mat-checkbox>Heat sensor</mat-checkbox>
             </li>
           </ul>
+          </div>
 
           <mat-form-field>
             <mat-label>Key location</mat-label>
