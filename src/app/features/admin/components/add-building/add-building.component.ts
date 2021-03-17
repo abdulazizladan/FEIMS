@@ -90,7 +90,7 @@ export class AddBuildingComponent implements OnInit {
       structureType: ['', [
         Validators.required
       ]],
-      yearDecorated: [0, [
+      yearLastDecorated: [0, [
         Validators.required
       ]],
       floorJointsMaterials: ['', [
@@ -300,19 +300,19 @@ export class AddBuildingComponent implements OnInit {
       elevatorType: ['', [
 
       ]],
-      keyLocation: ['', [
+      elevatorKeyLocation: ['', [
 
       ]],
-      brandName: ['', [
+      elevatorBrandName: ['', [
 
       ]],
-      serviceCompany: ['', [
+      elevatorServiceCompany: ['', [
 
       ]],
       elevatorServicePhoneNumber: ['', [
 
       ]],
-      emergencyShutoffLocation: ['', [
+      elevatorEmergencyShutoffLocation: ['', [
 
       ]],
       elevatorExit: ['', [
@@ -321,7 +321,18 @@ export class AddBuildingComponent implements OnInit {
     })
 
     this.thirdFormGroup = this.fb.group({
+      roofLightsCondition: ['', [
 
+      ]],
+      roofLightsRepairCost: ['', [
+
+      ]],
+      airQualityCondition: ['', [
+
+      ]],
+      airQualityRepairCost: [0, [
+
+      ]]
     })
   }
 
