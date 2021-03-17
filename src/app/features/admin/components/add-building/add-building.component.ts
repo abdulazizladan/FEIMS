@@ -332,6 +332,90 @@ export class AddBuildingComponent implements OnInit {
       ]],
       airQualityRepairCost: [0, [
 
+      ]],
+      ventilationSystemCondition: ['', [
+
+      ]],
+      ventilationSystemRepairCost: [0, [
+
+      ]],
+      airConditioningCondition: ['', [
+
+      ]],
+      airConditioningRepairCost: [0, [
+
+      ]],
+      materialHandlingSystemCondition: ['', [
+
+      ]],
+      materialHandlingSystemRepairCost: [0, [
+
+      ]],
+      roofOpeningsCondition: ['', [
+
+      ]],
+      roofOpeningsRepairCost: [0, [
+
+      ]],
+      temperatureControlCondition: ['', [
+
+      ]],
+      temperatureControlRepairCost: [0, [
+
+      ]],
+      hotWaterCondition: ['', [
+
+      ]],
+      hotWaterRepairCost: [0, [
+
+      ]],
+      burglarProofCondition: ['', [
+
+      ]],
+      burglarProofRepairCost: [0, [
+
+      ]],
+      gatesCondition: ['', [
+
+      ]],
+      gatesRepairCost: [0, [
+
+      ]],
+      drainageCondition: ['', [
+
+      ]],
+      drainageRepairCost: [0, [
+
+      ]],
+      distributionCondition: ['', [
+
+      ]],
+      distributionRepairCost: [0, [
+
+      ]],
+      coldWaterCondition: ['', [
+
+      ]],
+      coldWaterRepairCost: [0, [
+
+      ]],
+      gasTanksCondition: ['', [
+
+      ]],
+      gasTanksRepairCost: [0, [
+
+      ]],
+      gasPipingCondition: ['', [
+
+      ]],
+      gasPipingRepairCost: [0, [
+
+      ]],
+      compressedAirCondition: ['', [
+
+      ]],
+      compressedAirRepairCost: [0,[
+
       ]]
     })
   }

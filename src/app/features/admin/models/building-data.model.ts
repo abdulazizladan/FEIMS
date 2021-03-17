@@ -116,10 +116,58 @@ export interface BuildingData{
   hasElectricEye: boolean;
   hasHeatSensor: boolean;
 
-  keyLocation: string;
+  elevatorKeyLocation: string;
   brandName: string;
   serviceCompany: string;
   elevatorServicePhoneNumber: number;
   emergencyShutoffLocation: string;
   elevatorExit: string;
+
+  roofLightsCondition: string;
+  roofLightsRepairCost: number;
+
+  airQualityCondition: string;
+  airQualityRepairCost: number;
+
+  ventilationSystemCondition: string;
+  ventilationSystemRepairCost: number;
+
+  airConditioningCondition: string;
+  airConditioningRepairCost: number;
+
+  materialHandlingSystemCondition: string;
+  materialHandlingSystemRepairCost: number;
+
+  roofOpeningsCondition: string;
+  roofOpeningsRepairCost: number;
+
+  temperatureControlCondition: string;
+  temperatureControlRepairCost: number;
+
+  hotWaterCondition: string;
+  hotWaterRepairCost: number;
+
+  burglarProofCondition: string;
+  burglarProofRepairCost: number;
+
+  gatesCondition: string;
+  gatesRepairCost: number;
+
+  drainageCondition: string;
+  drainageRepairCost: number;
+
+  distributionCondition: string;
+  distributionRepairCost: number;
+
+  coldWaterCondition: string;
+  coldWaterRepairCost: number;
+
+  gasTanksCondition: string;
+  gasTanksRepairCost: number;
+
+  gasPipingCondition: string;
+  gasPipingRepairCost: number;
+
+  compressedAirCondition: string;
+  compressedAirRepairCost: number;
 }

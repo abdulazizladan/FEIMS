@@ -817,7 +817,7 @@
         <legend>Ventilation System</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="ventilationSystemCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -828,27 +828,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
-          <span matPrefix>&#8358;</span><span matSuffix>.00</span>
-        </mat-form-field>
-      </fieldset>
-
-      <fieldset fxLayout="row wrap" fxLayoutGap="10px grid">
-        <legend>Ventilation System</legend>
-        <mat-form-field>
-          <mat-label>Condition</mat-label>
-        <mat-select>
-          <mat-option value="">-----</mat-option>
-          <mat-option value="working">Working</mat-option>
-          <mat-option value="repairable">Incomplete/Repairable</mat-option>
-          <mat-option value="not_working">Not working</mat-option>
-          <mat-option value="obsolete">Obsolete</mat-option>
-        </mat-select>
-        </mat-form-field>
-
-        <mat-form-field>
-          <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="ventilationSystemRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -857,7 +837,7 @@
         <legend>Air Conditioning</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="airConditioningCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -868,7 +848,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input matInput type="number" formControlName="airConditioningRepairCost">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -897,7 +877,7 @@
         <legend>Roof Openings</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="roofOpeningsCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -908,7 +888,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="roofOpeningsRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -917,7 +897,7 @@
         <legend>Temperature & Humidity Control</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="temperatureControlCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -928,7 +908,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="temperatureControlRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -937,7 +917,7 @@
         <legend>Hot Water</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="hotWaterCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -948,7 +928,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="hotWaterRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -957,7 +937,7 @@
         <legend>Burglar Proof</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select burglarProofCondition>
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -968,7 +948,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="burglarProofRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -977,7 +957,7 @@
         <legend>Gates</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="gatesCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -988,7 +968,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="gatesRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -997,7 +977,7 @@
         <legend>Drainage</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="drainageCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -1008,7 +988,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="drainageRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -1017,7 +997,7 @@
         <legend>Distribution</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="distributionCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -1028,7 +1008,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="distributionRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -1037,7 +1017,7 @@
         <legend>Cold Water</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="coldWaterCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -1048,7 +1028,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="coldWaterRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -1057,7 +1037,7 @@
         <legend>Gas Tanks</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="gasTanksCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -1068,7 +1048,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="gasTanksRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -1077,7 +1057,7 @@
         <legend>Gas Piping</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="gasPipingCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -1088,7 +1068,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="gasPipingRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
@@ -1097,7 +1077,7 @@
         <legend>Air Compressed</legend>
         <mat-form-field>
           <mat-label>Condition</mat-label>
-        <mat-select>
+        <mat-select formControlName="compressedAirCondition">
           <mat-option value="">-----</mat-option>
           <mat-option value="working">Working</mat-option>
           <mat-option value="repairable">Incomplete/Repairable</mat-option>
@@ -1108,7 +1088,7 @@
 
         <mat-form-field>
           <mat-label>Cost of repair</mat-label>
-          <input matInput type="number">
+          <input formControlName="compressedAirRepairCost" matInput type="number">
           <span matPrefix>&#8358;</span><span matSuffix>.00</span>
         </mat-form-field>
       </fieldset>
