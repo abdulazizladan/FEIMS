@@ -5,11 +5,11 @@ import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   {
-    path : 'auth',
+    path : '',
     loadChildren : ()=>import('./auth/auth.module').then(mod => mod.AuthModule)
   },
   {
-    path: '',
+    path: 'admin',
     loadChildren : ()=>import('./features/admin/admin.module').then(mod=>mod.AdminModule),
     canActivate: [AuthGuard]
   },
