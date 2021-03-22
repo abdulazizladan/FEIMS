@@ -27,7 +27,7 @@ export class AuthService {
   }
 
   register(value: {email: string, password: string}){
-    return this._http.post<any>( this.loginUrl, value)
+    return this._http.post<any>( this.registerUrl, value)
   }
 
   resetPassword(value: string): boolean {
